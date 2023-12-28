@@ -6,8 +6,11 @@ class Application extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Akurat')),
-      body: const Center(child: Text('Hello World')),
+      appBar: AppBar(),
+      resizeToAvoidBottomInset: true,
+      body: const Center(
+        child: Text('Hello, World!'),
+      ),
     );
   }
 }
