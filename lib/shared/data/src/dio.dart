@@ -39,7 +39,7 @@ class HttpClient {
 Future<String?> requestToken(Dio dio, {bool forced = false}) async {
   String? token = await SecureStorage.read('x-access-token');
 
-  if (token != null) {
+  if (!forced && token != null) {
     return token;
   }
 
