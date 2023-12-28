@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
+import 'pages/_app.dart';
+import 'theme/custom_theme.dart';
+
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MainApp());
 }
 
@@ -9,12 +13,11 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Akurat',
+      theme: CustomTheme.themeData(context),
+      home: const Application(),
     );
   }
 }

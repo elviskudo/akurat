@@ -1,4 +1,4 @@
-package co.akurat.mobile.akurat
+package co.akurat.mobile
 
 import io.flutter.embedding.android.FlutterActivity
 
