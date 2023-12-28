@@ -28,18 +28,25 @@ class ApiResult<T> {
   String toRawJson() => json.encode(toJson());
 
   factory ApiResult.fromJson(
-    Map<String, dynamic> json, {
-    T Function(Object? json)? fromJsonT,
-  }) =>
-      ApiResult<T>(
-        meta: ApiMeta.fromJson(json['meta']),
-        data: fromJsonT != null ? fromJsonT(json['data']) : json['data'],
-        error: json['error'] != null
-            ? List<ApiError>.from(
-                json['error'].map((x) => ApiError.fromJson(x)),
-              )
-            : null,
-      );
+    dynamic json, {
+    T Function(Map<String, dynamic> json)? fromJsonT,
+  }) {
+    // check if json is string or Map<String, dynamic>
+    // ignore: no_leading_underscores_for_local_identifiers
+    final safeJson = json is String ? jsonDecode(json) : json;
+
+    return ApiResult<T>(
+      meta: ApiMeta.fromJson(safeJson['meta']),
+      data: fromJsonT != null
+          ? fromJsonT(safeJson['data'] as Map<String, dynamic>)
+          : safeJson['data'],
+      error: safeJson['error'] != null
+          ? List<ApiError>.from(
+              safeJson['error'].map((x) => ApiError.fromJson(x)),
+            )
+          : null,
+    );
+  }
 
   Map<String, dynamic> toJson({Object? Function(T value)? toJsonT}) => {
         'meta': meta.toJson(),
@@ -77,15 +84,15 @@ class ApiMeta {
   String toRawJson() => json.encode(toJson());
 
   factory ApiMeta.fromJson(Map<String, dynamic> json) => ApiMeta(
-        code: json["code"],
-        message: json["message"],
-        status: json["status"],
+        code: json['code'],
+        message: json['message'],
+        status: json['status'],
       );
 
   Map<String, dynamic> toJson() => {
-        "code": code,
-        "message": message,
-        "status": status,
+        'code': code,
+        'message': message,
+        'status': status,
       };
 }
 
@@ -113,12 +120,12 @@ class ApiError {
   String toRawJson() => json.encode(toJson());
 
   factory ApiError.fromJson(Map<String, dynamic> json) => ApiError(
-        key: json["key"],
-        value: json["value"],
+        key: json['key'],
+        value: json['value'],
       );
 
   Map<String, dynamic> toJson() => {
-        "key": key,
-        "value": value,
+        'key': key,
+        'value': value,
       };
 }

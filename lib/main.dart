@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 
 import 'pages/_app.dart';
+import 'shared/data/src/dio.dart';
 import 'theme/custom_theme.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  await HttpClient.init();
+
   runApp(const MainApp());
 }
 
