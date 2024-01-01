@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../features/menu/menu_view.dart';
 import '../shared/data/src/fss.dart';
 
 class Application extends StatefulWidget {
@@ -31,6 +32,7 @@ class _ApplicationState extends State<Application> {
     return Scaffold(
       appBar: AppBar(),
       resizeToAvoidBottomInset: true,
+      drawer: const AppDrawer(),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(16.0),

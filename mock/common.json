@@ -21,7 +21,7 @@
   },
   {
     "path": "/reference/menu/",
-    "method": "POST",
+    "method": "GET",
     "statusCode": 200,
     "data": {
       "meta": {
@@ -30,459 +30,452 @@
         "message": "Authentication succeeded."
       },
       "data": {
-        "meta": {
-          "code": 200,
-          "status": true,
-          "message": ""
-        },
-        "data": {
-          "list": [
-            {
-              "id": 2130,
-              "name": "News",
-              "alias": "news",
-              "title": "News",
-              "description": "News",
-              "keyword": "News",
-              "photo_url": null,
-              "icon_url": null,
-              "child": [
-                {
-                  "id": 2137,
-                  "name": "Nasional",
-                  "alias": "nasional",
-                  "title": "Nasional",
-                  "description": "Nasional",
-                  "keyword": "Nasional",
-                  "photo_url": null,
-                  "icon_url": null
-                },
-                {
-                  "id": 2138,
-                  "name": "Politik",
-                  "alias": "politik",
-                  "title": "Politik",
-                  "description": "Politik",
-                  "keyword": "Politik",
-                  "photo_url": null,
-                  "icon_url": null
-                },
-                {
-                  "id": 2139,
-                  "name": "Hukum",
-                  "alias": "hukum",
-                  "title": "Hukum",
-                  "description": "Hukum",
-                  "keyword": "Hukum",
-                  "photo_url": null,
-                  "icon_url": null
-                },
-                {
-                  "id": 2140,
-                  "name": "Megapolitan",
-                  "alias": "megapolitan",
-                  "title": "Megapolitan",
-                  "description": "Megapolitan",
-                  "keyword": "Megapolitan",
-                  "photo_url": null,
-                  "icon_url": null
-                },
-                {
-                  "id": 2141,
-                  "name": "Daerah",
-                  "alias": "daerah",
-                  "title": "Daerah",
-                  "description": "Daerah",
-                  "keyword": "Daerah",
-                  "photo_url": null,
-                  "icon_url": null
-                },
-                {
-                  "id": 2142,
-                  "name": "Dunia",
-                  "alias": "dunia",
-                  "title": "Dunia",
-                  "description": "Dunia",
-                  "keyword": "Dunia",
-                  "photo_url": null,
-                  "icon_url": null
-                }
-              ]
-            },
-            {
-              "id": 2131,
-              "name": "Ekonomi",
-              "alias": "ekonomi",
-              "title": "Ekonomi",
-              "description": "Ekonomi",
-              "keyword": "Ekonomi",
-              "photo_url": null,
-              "icon_url": null,
-              "child": [
-                {
-                  "id": 2143,
-                  "name": "Makro",
-                  "alias": "makro",
-                  "title": "Makro",
-                  "description": "Makro",
-                  "keyword": "Makro",
-                  "photo_url": null,
-                  "icon_url": null
-                },
-                {
-                  "id": 2144,
-                  "name": "Keuangan",
-                  "alias": "keuangan",
-                  "title": "Keuangan",
-                  "description": "Keuangan",
-                  "keyword": "Keuangan",
-                  "photo_url": null,
-                  "icon_url": null
-                },
-                {
-                  "id": 2145,
-                  "name": "Rill",
-                  "alias": "rill",
-                  "title": "Rill",
-                  "description": "Rill",
-                  "keyword": "Rill",
-                  "photo_url": null,
-                  "icon_url": null
-                },
-                {
-                  "id": 2146,
-                  "name": "Mikro",
-                  "alias": "mikro",
-                  "title": "Mikro",
-                  "description": "Mikro",
-                  "keyword": "Mikro",
-                  "photo_url": null,
-                  "icon_url": null
-                },
-                {
-                  "id": 2147,
-                  "name": "Infrastuktur",
-                  "alias": "infrastuktur",
-                  "title": "Infrastuktur",
-                  "description": "Infrastuktur",
-                  "keyword": "Infrastuktur",
-                  "photo_url": null,
-                  "icon_url": null
-                },
-                {
-                  "id": 2148,
-                  "name": "UMKM",
-                  "alias": "umkm",
-                  "title": "UMKM",
-                  "description": "UMKM",
-                  "keyword": "UMKM",
-                  "photo_url": null,
-                  "icon_url": null
-                }
-              ]
-            },
-            {
-              "id": 2132,
-              "name": "Entertainment",
-              "alias": "entertainment",
-              "title": "Entertainment",
-              "description": "Entertainment",
-              "keyword": "Entertainment",
-              "photo_url": null,
-              "icon_url": null,
-              "child": [
-                {
-                  "id": 2149,
-                  "name": "Selebriti",
-                  "alias": "selebriti",
-                  "title": "Selebriti",
-                  "description": "Selebriti",
-                  "keyword": "Selebriti",
-                  "photo_url": null,
-                  "icon_url": null
-                },
-                {
-                  "id": 2150,
-                  "name": "Showbiz",
-                  "alias": "showbiz",
-                  "title": "Showbiz",
-                  "description": "Showbiz",
-                  "keyword": "Showbiz",
-                  "photo_url": null,
-                  "icon_url": null
-                },
-                {
-                  "id": 2151,
-                  "name": "Viral",
-                  "alias": "viral",
-                  "title": "Viral",
-                  "description": "Viral",
-                  "keyword": "Viral",
-                  "photo_url": null,
-                  "icon_url": null
-                }
-              ]
-            },
-            {
-              "id": 2133,
-              "name": "Rahmah",
-              "alias": "rahmah",
-              "title": "Rahmah",
-              "description": "Rahmah",
-              "keyword": "Rahmah",
-              "photo_url": null,
-              "icon_url": null,
-              "child": [
-                {
-                  "id": 2152,
-                  "name": "Hikmah",
-                  "alias": "hikmah",
-                  "title": "Hikmah",
-                  "description": "Hikmah",
-                  "keyword": "Hikmah",
-                  "photo_url": null,
-                  "icon_url": null
-                },
-                {
-                  "id": 2153,
-                  "name": "Al-quran & Hadist",
-                  "alias": "alquran-hadist",
-                  "title": "Al-quran & Hadist",
-                  "description": "Al-quran & Hadist",
-                  "keyword": "Al-quran & Hadist",
-                  "photo_url": null,
-                  "icon_url": null
-                },
-                {
-                  "id": 2154,
-                  "name": "Do'a dan Ibadah",
-                  "alias": "doa-ibadah",
-                  "title": "Do'a dan Ibadah",
-                  "description": "Do'a dan Ibadah",
-                  "keyword": "Do'a dan Ibadah",
-                  "photo_url": null,
-                  "icon_url": null
-                },
-                {
-                  "id": 2155,
-                  "name": "Khazanah Islam",
-                  "alias": "khazanah-islam",
-                  "title": "Khazanah Islam",
-                  "description": "Khazanah Islam",
-                  "keyword": "Khazanah Islam",
-                  "photo_url": null,
-                  "icon_url": null
-                },
-                {
-                  "id": 2156,
-                  "name": "Widget Islami",
-                  "alias": "widget-islami",
-                  "title": "Widget Islami",
-                  "description": "Widget Islami",
-                  "keyword": "Widget Islami",
-                  "photo_url": null,
-                  "icon_url": null
-                }
-              ]
-            },
-            {
-              "id": 2134,
-              "name": "Lifestyle",
-              "alias": "lifestyle",
-              "title": "Lifestyle",
-              "description": "Lifestyle",
-              "keyword": "Lifestyle",
-              "photo_url": null,
-              "icon_url": null,
-              "child": [
-                {
-                  "id": 2157,
-                  "name": "Food",
-                  "alias": "food",
-                  "title": "Food",
-                  "description": "Food",
-                  "keyword": "Food",
-                  "photo_url": null,
-                  "icon_url": null
-                },
-                {
-                  "id": 2158,
-                  "name": "Trend",
-                  "alias": "trend",
-                  "title": "Trend",
-                  "description": "Trend",
-                  "keyword": "Trend",
-                  "photo_url": null,
-                  "icon_url": null
-                },
-                {
-                  "id": 2159,
-                  "name": "Health",
-                  "alias": "health",
-                  "title": "Health",
-                  "description": "Health",
-                  "keyword": "Health",
-                  "photo_url": null,
-                  "icon_url": null
-                },
-                {
-                  "id": 2160,
-                  "name": "Love",
-                  "alias": "love",
-                  "title": "Love",
-                  "description": "Love",
-                  "keyword": "Love",
-                  "photo_url": null,
-                  "icon_url": null
-                },
-                {
-                  "id": 2161,
-                  "name": "Parenting",
-                  "alias": "parenting",
-                  "title": "Parenting",
-                  "description": "Parenting",
-                  "keyword": "Parenting",
-                  "photo_url": null,
-                  "icon_url": null
-                },
-                {
-                  "id": 2162,
-                  "name": "Travel",
-                  "alias": "travel",
-                  "title": "Travel",
-                  "description": "Travel",
-                  "keyword": "Travel",
-                  "photo_url": null,
-                  "icon_url": null
-                }
-              ]
-            },
-            {
-              "id": 2135,
-              "name": "Tech",
-              "alias": "tech",
-              "title": "Tech",
-              "description": "Tech",
-              "keyword": "Tech",
-              "photo_url": null,
-              "icon_url": null,
-              "child": [
-                {
-                  "id": 2163,
-                  "name": "Gadget",
-                  "alias": "gadget",
-                  "title": "Gadget",
-                  "description": "Gadget",
-                  "keyword": "Gadget",
-                  "photo_url": null,
-                  "icon_url": null
-                },
-                {
-                  "id": 2164,
-                  "name": "Games",
-                  "alias": "games",
-                  "title": "Games",
-                  "description": "Games",
-                  "keyword": "Games",
-                  "photo_url": null,
-                  "icon_url": null
-                },
-                {
-                  "id": 2165,
-                  "name": "Otomotif",
-                  "alias": "otomotif",
-                  "title": "Otomotif",
-                  "description": "Otomotif",
-                  "keyword": "Otomotif",
-                  "photo_url": null,
-                  "icon_url": null
-                },
-                {
-                  "id": 2166,
-                  "name": "Infotech",
-                  "alias": "infotech",
-                  "title": "Infotech",
-                  "description": "Infotech",
-                  "keyword": "Infotech",
-                  "photo_url": null,
-                  "icon_url": null
-                }
-              ]
-            },
-            {
-              "id": 2136,
-              "name": "Olahraga",
-              "alias": "olahraga",
-              "title": "Olahraga",
-              "description": "Olahraga",
-              "keyword": "Olahraga",
-              "photo_url": null,
-              "icon_url": null,
-              "child": [
-                {
-                  "id": 2167,
-                  "name": "Sportainment",
-                  "alias": "sportainment",
-                  "title": "Sportainment",
-                  "description": "Sportainment",
-                  "keyword": "Sportainment",
-                  "photo_url": null,
-                  "icon_url": null
-                },
-                {
-                  "id": 2168,
-                  "name": "Bola",
-                  "alias": "bola",
-                  "title": "Bola",
-                  "description": "Bola",
-                  "keyword": "Bola",
-                  "photo_url": null,
-                  "icon_url": null
-                },
-                {
-                  "id": 2169,
-                  "name": "Badminton",
-                  "alias": "badminton",
-                  "title": "Badminton",
-                  "description": "Badminton",
-                  "keyword": "Badminton",
-                  "photo_url": null,
-                  "icon_url": null
-                },
-                {
-                  "id": 2170,
-                  "name": "Balap",
-                  "alias": "balap",
-                  "title": "Balap",
-                  "description": "Balap",
-                  "keyword": "Balap",
-                  "photo_url": null,
-                  "icon_url": null
-                },
-                {
-                  "id": 2171,
-                  "name": "Arena",
-                  "alias": "arena",
-                  "title": "Arena",
-                  "description": "Arena",
-                  "keyword": "Arena",
-                  "photo_url": null,
-                  "icon_url": null
-                }
-              ]
-            },
-            {
-              "id": 2172,
-              "name": "Infografis",
-              "alias": "infografis",
-              "title": "Infografis",
-              "description": "Infografis",
-              "keyword": "Infografis",
-              "photo_url": null,
-              "icon_url": null
-            }
-          ]
-        }
+        "list": [
+          {
+            "id": 2130,
+            "name": "News",
+            "alias": "news",
+            "title": "News",
+            "description": "News",
+            "keyword": "News",
+            "photo_url": null,
+            "icon_url": null,
+            "child": [
+              {
+                "id": 2137,
+                "name": "Nasional",
+                "alias": "nasional",
+                "title": "Nasional",
+                "description": "Nasional",
+                "keyword": "Nasional",
+                "photo_url": null,
+                "icon_url": null
+              },
+              {
+                "id": 2138,
+                "name": "Politik",
+                "alias": "politik",
+                "title": "Politik",
+                "description": "Politik",
+                "keyword": "Politik",
+                "photo_url": null,
+                "icon_url": null
+              },
+              {
+                "id": 2139,
+                "name": "Hukum",
+                "alias": "hukum",
+                "title": "Hukum",
+                "description": "Hukum",
+                "keyword": "Hukum",
+                "photo_url": null,
+                "icon_url": null
+              },
+              {
+                "id": 2140,
+                "name": "Megapolitan",
+                "alias": "megapolitan",
+                "title": "Megapolitan",
+                "description": "Megapolitan",
+                "keyword": "Megapolitan",
+                "photo_url": null,
+                "icon_url": null
+              },
+              {
+                "id": 2141,
+                "name": "Daerah",
+                "alias": "daerah",
+                "title": "Daerah",
+                "description": "Daerah",
+                "keyword": "Daerah",
+                "photo_url": null,
+                "icon_url": null
+              },
+              {
+                "id": 2142,
+                "name": "Dunia",
+                "alias": "dunia",
+                "title": "Dunia",
+                "description": "Dunia",
+                "keyword": "Dunia",
+                "photo_url": null,
+                "icon_url": null
+              }
+            ]
+          },
+          {
+            "id": 2131,
+            "name": "Ekonomi",
+            "alias": "ekonomi",
+            "title": "Ekonomi",
+            "description": "Ekonomi",
+            "keyword": "Ekonomi",
+            "photo_url": null,
+            "icon_url": null,
+            "child": [
+              {
+                "id": 2143,
+                "name": "Makro",
+                "alias": "makro",
+                "title": "Makro",
+                "description": "Makro",
+                "keyword": "Makro",
+                "photo_url": null,
+                "icon_url": null
+              },
+              {
+                "id": 2144,
+                "name": "Keuangan",
+                "alias": "keuangan",
+                "title": "Keuangan",
+                "description": "Keuangan",
+                "keyword": "Keuangan",
+                "photo_url": null,
+                "icon_url": null
+              },
+              {
+                "id": 2145,
+                "name": "Rill",
+                "alias": "rill",
+                "title": "Rill",
+                "description": "Rill",
+                "keyword": "Rill",
+                "photo_url": null,
+                "icon_url": null
+              },
+              {
+                "id": 2146,
+                "name": "Mikro",
+                "alias": "mikro",
+                "title": "Mikro",
+                "description": "Mikro",
+                "keyword": "Mikro",
+                "photo_url": null,
+                "icon_url": null
+              },
+              {
+                "id": 2147,
+                "name": "Infrastuktur",
+                "alias": "infrastuktur",
+                "title": "Infrastuktur",
+                "description": "Infrastuktur",
+                "keyword": "Infrastuktur",
+                "photo_url": null,
+                "icon_url": null
+              },
+              {
+                "id": 2148,
+                "name": "UMKM",
+                "alias": "umkm",
+                "title": "UMKM",
+                "description": "UMKM",
+                "keyword": "UMKM",
+                "photo_url": null,
+                "icon_url": null
+              }
+            ]
+          },
+          {
+            "id": 2132,
+            "name": "Entertainment",
+            "alias": "entertainment",
+            "title": "Entertainment",
+            "description": "Entertainment",
+            "keyword": "Entertainment",
+            "photo_url": null,
+            "icon_url": null,
+            "child": [
+              {
+                "id": 2149,
+                "name": "Selebriti",
+                "alias": "selebriti",
+                "title": "Selebriti",
+                "description": "Selebriti",
+                "keyword": "Selebriti",
+                "photo_url": null,
+                "icon_url": null
+              },
+              {
+                "id": 2150,
+                "name": "Showbiz",
+                "alias": "showbiz",
+                "title": "Showbiz",
+                "description": "Showbiz",
+                "keyword": "Showbiz",
+                "photo_url": null,
+                "icon_url": null
+              },
+              {
+                "id": 2151,
+                "name": "Viral",
+                "alias": "viral",
+                "title": "Viral",
+                "description": "Viral",
+                "keyword": "Viral",
+                "photo_url": null,
+                "icon_url": null
+              }
+            ]
+          },
+          {
+            "id": 2133,
+            "name": "Rahmah",
+            "alias": "rahmah",
+            "title": "Rahmah",
+            "description": "Rahmah",
+            "keyword": "Rahmah",
+            "photo_url": null,
+            "icon_url": null,
+            "child": [
+              {
+                "id": 2152,
+                "name": "Hikmah",
+                "alias": "hikmah",
+                "title": "Hikmah",
+                "description": "Hikmah",
+                "keyword": "Hikmah",
+                "photo_url": null,
+                "icon_url": null
+              },
+              {
+                "id": 2153,
+                "name": "Al-quran & Hadist",
+                "alias": "alquran-hadist",
+                "title": "Al-quran & Hadist",
+                "description": "Al-quran & Hadist",
+                "keyword": "Al-quran & Hadist",
+                "photo_url": null,
+                "icon_url": null
+              },
+              {
+                "id": 2154,
+                "name": "Do'a dan Ibadah",
+                "alias": "doa-ibadah",
+                "title": "Do'a dan Ibadah",
+                "description": "Do'a dan Ibadah",
+                "keyword": "Do'a dan Ibadah",
+                "photo_url": null,
+                "icon_url": null
+              },
+              {
+                "id": 2155,
+                "name": "Khazanah Islam",
+                "alias": "khazanah-islam",
+                "title": "Khazanah Islam",
+                "description": "Khazanah Islam",
+                "keyword": "Khazanah Islam",
+                "photo_url": null,
+                "icon_url": null
+              },
+              {
+                "id": 2156,
+                "name": "Widget Islami",
+                "alias": "widget-islami",
+                "title": "Widget Islami",
+                "description": "Widget Islami",
+                "keyword": "Widget Islami",
+                "photo_url": null,
+                "icon_url": null
+              }
+            ]
+          },
+          {
+            "id": 2134,
+            "name": "Lifestyle",
+            "alias": "lifestyle",
+            "title": "Lifestyle",
+            "description": "Lifestyle",
+            "keyword": "Lifestyle",
+            "photo_url": null,
+            "icon_url": null,
+            "child": [
+              {
+                "id": 2157,
+                "name": "Food",
+                "alias": "food",
+                "title": "Food",
+                "description": "Food",
+                "keyword": "Food",
+                "photo_url": null,
+                "icon_url": null
+              },
+              {
+                "id": 2158,
+                "name": "Trend",
+                "alias": "trend",
+                "title": "Trend",
+                "description": "Trend",
+                "keyword": "Trend",
+                "photo_url": null,
+                "icon_url": null
+              },
+              {
+                "id": 2159,
+                "name": "Health",
+                "alias": "health",
+                "title": "Health",
+                "description": "Health",
+                "keyword": "Health",
+                "photo_url": null,
+                "icon_url": null
+              },
+              {
+                "id": 2160,
+                "name": "Love",
+                "alias": "love",
+                "title": "Love",
+                "description": "Love",
+                "keyword": "Love",
+                "photo_url": null,
+                "icon_url": null
+              },
+              {
+                "id": 2161,
+                "name": "Parenting",
+                "alias": "parenting",
+                "title": "Parenting",
+                "description": "Parenting",
+                "keyword": "Parenting",
+                "photo_url": null,
+                "icon_url": null
+              },
+              {
+                "id": 2162,
+                "name": "Travel",
+                "alias": "travel",
+                "title": "Travel",
+                "description": "Travel",
+                "keyword": "Travel",
+                "photo_url": null,
+                "icon_url": null
+              }
+            ]
+          },
+          {
+            "id": 2135,
+            "name": "Tech",
+            "alias": "tech",
+            "title": "Tech",
+            "description": "Tech",
+            "keyword": "Tech",
+            "photo_url": null,
+            "icon_url": null,
+            "child": [
+              {
+                "id": 2163,
+                "name": "Gadget",
+                "alias": "gadget",
+                "title": "Gadget",
+                "description": "Gadget",
+                "keyword": "Gadget",
+                "photo_url": null,
+                "icon_url": null
+              },
+              {
+                "id": 2164,
+                "name": "Games",
+                "alias": "games",
+                "title": "Games",
+                "description": "Games",
+                "keyword": "Games",
+                "photo_url": null,
+                "icon_url": null
+              },
+              {
+                "id": 2165,
+                "name": "Otomotif",
+                "alias": "otomotif",
+                "title": "Otomotif",
+                "description": "Otomotif",
+                "keyword": "Otomotif",
+                "photo_url": null,
+                "icon_url": null
+              },
+              {
+                "id": 2166,
+                "name": "Infotech",
+                "alias": "infotech",
+                "title": "Infotech",
+                "description": "Infotech",
+                "keyword": "Infotech",
+                "photo_url": null,
+                "icon_url": null
+              }
+            ]
+          },
+          {
+            "id": 2136,
+            "name": "Olahraga",
+            "alias": "olahraga",
+            "title": "Olahraga",
+            "description": "Olahraga",
+            "keyword": "Olahraga",
+            "photo_url": null,
+            "icon_url": null,
+            "child": [
+              {
+                "id": 2167,
+                "name": "Sportainment",
+                "alias": "sportainment",
+                "title": "Sportainment",
+                "description": "Sportainment",
+                "keyword": "Sportainment",
+                "photo_url": null,
+                "icon_url": null
+              },
+              {
+                "id": 2168,
+                "name": "Bola",
+                "alias": "bola",
+                "title": "Bola",
+                "description": "Bola",
+                "keyword": "Bola",
+                "photo_url": null,
+                "icon_url": null
+              },
+              {
+                "id": 2169,
+                "name": "Badminton",
+                "alias": "badminton",
+                "title": "Badminton",
+                "description": "Badminton",
+                "keyword": "Badminton",
+                "photo_url": null,
+                "icon_url": null
+              },
+              {
+                "id": 2170,
+                "name": "Balap",
+                "alias": "balap",
+                "title": "Balap",
+                "description": "Balap",
+                "keyword": "Balap",
+                "photo_url": null,
+                "icon_url": null
+              },
+              {
+                "id": 2171,
+                "name": "Arena",
+                "alias": "arena",
+                "title": "Arena",
+                "description": "Arena",
+                "keyword": "Arena",
+                "photo_url": null,
+                "icon_url": null
+              }
+            ]
+          },
+          {
+            "id": 2172,
+            "name": "Infografis",
+            "alias": "infografis",
+            "title": "Infografis",
+            "description": "Infografis",
+            "keyword": "Infografis",
+            "photo_url": null,
+            "icon_url": null
+          }
+        ]
       }
     }
   }
