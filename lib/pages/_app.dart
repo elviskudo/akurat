@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:websafe_svg/websafe_svg.dart';
 
-import '../features/menu/menu_view.dart';
+import '../features/topics/topics_view.dart';
 import '../shared/data/src/fss.dart';
+import '../shared/widgets/app_shell.dart';
 
 class Application extends StatefulWidget {
   const Application({super.key});
@@ -29,11 +31,16 @@ class _ApplicationState extends State<Application> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-      resizeToAvoidBottomInset: true,
-      drawer: const AppDrawer(),
-      body: Center(
+    return AppShell(
+      appBar: AppBar(
+        title: WebsafeSvg.asset(
+          'assets/logo.svg',
+          height: 32.0,
+        ),
+        centerTitle: true,
+        bottom: const TopicsTabBar(),
+      ),
+      child: Center(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Text(token ??= 'Hello, World!'),

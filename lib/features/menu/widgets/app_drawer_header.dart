@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:websafe_svg/websafe_svg.dart';
 
 class AppDrawerHeader extends StatelessWidget {
   // ignore: unused_element
@@ -9,9 +10,10 @@ class AppDrawerHeader extends StatelessWidget {
     return DrawerHeader(
       child: Row(
         children: [
-          const CircleAvatar(
+          CircleAvatar(
             radius: 32,
-            child: Icon(Icons.person, size: 32),
+            backgroundColor: Theme.of(context).colorScheme.secondaryContainer,
+            child: WebsafeSvg.asset('assets/akurat-icon.svg', width: 32),
           ),
           const SizedBox(width: 16),
           Column(

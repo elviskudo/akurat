@@ -5,7 +5,7 @@ import '../../shared/data/src/dio.dart';
 import 'menu_model.dart';
 
 class MenuRepository {
-  static Query<List<Menu>> getMenus() {
+  static Query<List<Menu>> getMenuItems() {
     return Query<List<Menu>>(
       key: ['/reference/menu/'],
       queryFn: () async {

@@ -17,8 +17,9 @@ class _AppDrawerState extends State<AppDrawer> {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
       child: QueryBuilder(
-        query: MenuRepository.getMenus(),
+        query: MenuRepository.getMenuItems(),
         builder: (context, state) {
           return SizedBox(
             height: MediaQuery.of(context).size.height,
