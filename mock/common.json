@@ -478,5 +478,326 @@
         ]
       }
     }
+  },
+  {
+    "path": "/article/headline/",
+    "method": "GET",
+    "statusCode": 200,
+    "data": {
+      "meta": {
+        "code": 200,
+        "status": true,
+        "message": ""
+      },
+      "data": {
+        "list": [
+          {
+            "id": 3698460,
+            "title": "Ternyata Ini Penyebab Kecelakaan KA Lokal di Cicalengka, Ngeri Banget!",
+            "description": "Kecelakaan hebat antara Kereta api (KA) Turangga dengan KA lokal Bandung Raya telah menelan korban jiwa.",
+            "url": "https://www.akurat.co/daerah/1303698460/ternyata-ini-penyebab-kecelakaan-ka-lokal-di-cicalengka-ngeri-banget",
+            "short_url": null,
+            "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/05/antarafoto-kecelakaan-kereta-di-cicalengka-05012024-rai-1-3789660404.jpg",
+            "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/05/antarafoto-kecelakaan-kereta-di-cicalengka-05012024-rai-1-3789660404.jpg",
+            "published_date": "2024-01-05 10:32:38",
+            "section": {
+              "id": 2141,
+              "name": "Daerah",
+              "alias": "daerah"
+            },
+            "is_video_content": 0
+          },
+          {
+            "id": 3698818,
+            "title": "Imbas Kecelakaan KA di Bandung, Total 19 Perjalanan Batal hingga Pemberlakukan Rekayasa Lalu Lintas",
+            "description": "PT Kereta Api Indonesia melaporkan setidaknya 19 perjalanan kereta terdampak kecelakaan KA Turangga dengan Commuterline Bandung Raya.",
+            "url": "https://www.akurat.co/daerah/1303698818/imbas-kecelakaan-ka-di-bandung-total-19-perjalanan-batal-hingga-pemberlakukan-rekayasa-lalu-lintas",
+            "short_url": null,
+            "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/05/IMG_2095-3226649624.jpeg",
+            "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/05/IMG_2095-3226649624.jpeg",
+            "published_date": "2024-01-05 10:38:35",
+            "section": {
+              "id": 2141,
+              "name": "Daerah",
+              "alias": "daerah"
+            },
+            "is_video_content": 0
+          },
+          {
+            "id": 3698473,
+            "title": "Begini Kronologi Adu Banteng KA Turangga dengan Commuterline Bandung Raya!",
+            "description": "Kecelakaan terjadi antara Kereta Api 350 Commuterline Bandung Raya dengan Pib 65A Turangga pada Jumat (5/1/2024) pukul 06.30 WIB.",
+            "url": "https://www.akurat.co/daerah/1303698473/begini-kronologi-adu-banteng-ka-turangga-dengan-commuterline-bandung-raya",
+            "short_url": null,
+            "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/05/antarafoto-kecelakaan-kereta-di-cicalengka-05012024-rai-10-1270238517.jpg",
+            "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/05/antarafoto-kecelakaan-kereta-di-cicalengka-05012024-rai-10-1270238517.jpg",
+            "published_date": "2024-01-05 09:38:20",
+            "section": {
+              "id": 2141,
+              "name": "Daerah",
+              "alias": "daerah"
+            },
+            "is_video_content": 0
+          },
+          {
+            "id": 3698418,
+            "title": "Kecelakaan Kereta di Cicalengka, Korban Meninggal Sementara 3 Orang",
+            "description": "Kereta api (KA) Turangga dengan KA lokal Bandung Raya alami kecelakaan yang hebat. Keduanya bertabrakan saat melintas di jalur Cicalengka.",
+            "url": "https://www.akurat.co/daerah/1303698418/kecelakaan-kereta-di-cicalengka-korban-meninggal-sementara-3-orang",
+            "short_url": null,
+            "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/05/IMG_2078-1803983507.jpeg",
+            "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/05/IMG_2078-1803983507.jpeg",
+            "published_date": "2024-01-05 09:26:14",
+            "section": {
+              "id": 2141,
+              "name": "Daerah",
+              "alias": "daerah"
+            },
+            "is_video_content": 0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "path": "/article/popular/?page=1&section_id=2141",
+    "method": "GET",
+    "statusCode": 200,
+    "data": {
+      "meta": {
+        "code": 200,
+        "status": true,
+        "message": ""
+      },
+      "data": {
+        "list": {
+          "latest": [
+            {
+              "id": 3698818,
+              "title": "Imbas Kecelakaan KA di Bandung, Total 19 Perjalanan Batal hingga Pemberlakukan Rekayasa Lalu Lintas",
+              "description": "PT Kereta Api Indonesia melaporkan setidaknya 19 perjalanan kereta terdampak kecelakaan KA Turangga dengan Commuterline Bandung Raya.",
+              "url": "https://www.akurat.co/daerah/1303698818/imbas-kecelakaan-ka-di-bandung-total-19-perjalanan-batal-hingga-pemberlakukan-rekayasa-lalu-lintas",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/05/IMG_2095-3226649624.jpeg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/05/IMG_2095-3226649624.jpeg",
+              "published_date": "2024-01-05 10:38:35",
+              "section": {
+                "id": 2141,
+                "name": "Daerah",
+                "alias": "daerah"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3698460,
+              "title": "Ternyata Ini Penyebab Kecelakaan KA Lokal di Cicalengka, Ngeri Banget!",
+              "description": "Kecelakaan hebat antara Kereta api (KA) Turangga dengan KA lokal Bandung Raya telah menelan korban jiwa.",
+              "url": "https://www.akurat.co/daerah/1303698460/ternyata-ini-penyebab-kecelakaan-ka-lokal-di-cicalengka-ngeri-banget",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/05/antarafoto-kecelakaan-kereta-di-cicalengka-05012024-rai-1-3789660404.jpg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/05/antarafoto-kecelakaan-kereta-di-cicalengka-05012024-rai-1-3789660404.jpg",
+              "published_date": "2024-01-05 10:32:38",
+              "section": {
+                "id": 2141,
+                "name": "Daerah",
+                "alias": "daerah"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3698324,
+              "title": "BNI Berbagi, Salurkan Bantuan Tanggap Darurat Erupsi Gunung Berapi Lewetobi Flores",
+              "description": "BNI menyerahkan bantuan tanggap darurat bencana erupsi Gunung Berapi Lewetobi Laki-laki, di Kecamatan Wulanggitang, Kabupaten Flores Timur.",
+              "url": "https://www.akurat.co/daerah/1303698324/bni-berbagi-salurkan-bantuan-tanggap-darurat-erupsi-gunung-berapi-lewetobi-flores",
+              "photo_url": "https://static.promediateknologi.id/crop/0x4:1280x644/750x500/photo/p2/130/2024/01/05/34c72bc6-2f8a-4dca-900b-960fd4af7794-1237301012.jpeg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x4:1280x644/220x140/photo/p2/130/2024/01/05/34c72bc6-2f8a-4dca-900b-960fd4af7794-1237301012.jpeg",
+              "published_date": "2024-01-05 09:45:10",
+              "section": {
+                "id": 2141,
+                "name": "Daerah",
+                "alias": "daerah"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3698473,
+              "title": "Begini Kronologi Adu Banteng KA Turangga dengan Commuterline Bandung Raya!",
+              "description": "Kecelakaan terjadi antara Kereta Api 350 Commuterline Bandung Raya dengan Pib 65A Turangga pada Jumat (5/1/2024) pukul 06.30 WIB.",
+              "url": "https://www.akurat.co/daerah/1303698473/begini-kronologi-adu-banteng-ka-turangga-dengan-commuterline-bandung-raya",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/05/antarafoto-kecelakaan-kereta-di-cicalengka-05012024-rai-10-1270238517.jpg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/05/antarafoto-kecelakaan-kereta-di-cicalengka-05012024-rai-10-1270238517.jpg",
+              "published_date": "2024-01-05 09:38:20",
+              "section": {
+                "id": 2141,
+                "name": "Daerah",
+                "alias": "daerah"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3698418,
+              "title": "Kecelakaan Kereta di Cicalengka, Korban Meninggal Sementara 3 Orang",
+              "description": "Kereta api (KA) Turangga dengan KA lokal Bandung Raya alami kecelakaan yang hebat. Keduanya bertabrakan saat melintas di jalur Cicalengka.",
+              "url": "https://www.akurat.co/daerah/1303698418/kecelakaan-kereta-di-cicalengka-korban-meninggal-sementara-3-orang",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/05/IMG_2078-1803983507.jpeg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/05/IMG_2078-1803983507.jpeg",
+              "published_date": "2024-01-05 09:26:14",
+              "section": {
+                "id": 2141,
+                "name": "Daerah",
+                "alias": "daerah"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3696685,
+              "title": "Singgah di Kopi Klotok, Alam Ganjar Nikmati Suasana Yogyakarta Saat Pagi Hari",
+              "description": "Alam Ganjar terlihat datang bersama sejumlah rekannya untuk santap pagi di Kopi Klotok, Kaliurang, Yogyakarta, Kamis (4/11/2023).",
+              "url": "https://www.akurat.co/daerah/1303696685/singgah-di-kopi-klotok-alam-ganjar-nikmati-suasana-yogyakarta-saat-pagi-hari",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/04/c9386eb0-1666-4535-8f77-fc0e24b2b2f2-75944520.jpeg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/04/c9386eb0-1666-4535-8f77-fc0e24b2b2f2-75944520.jpeg",
+              "published_date": "2024-01-04 18:56:01",
+              "section": {
+                "id": 2141,
+                "name": "Daerah",
+                "alias": "daerah"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3692759,
+              "title": "Sampah Berserakan Usai Pergantian Malam Tahun Baru, Gardu Ganjar Gelar Aksi Bersih-bersih di Pantai Banten Selatan",
+              "description": "Gardu Ganjar bergerak memperhatikan lingkungan dengan menyapu bersih sampah-sampah di sekitar pantai pada Selasa (2/1/2024).",
+              "url": "https://www.akurat.co/daerah/1303692759/sampah-berserakan-usai-pergantian-malam-tahun-baru-gardu-ganjar-gelar-aksi-bersih-bersih-di-pantai-banten-selatan",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/03/52d25dde-2e8a-40d4-9995-ca7e5d086218-2211013418.jpeg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/03/52d25dde-2e8a-40d4-9995-ca7e5d086218-2211013418.jpeg",
+              "published_date": "2024-01-03 18:45:00",
+              "section": {
+                "id": 2141,
+                "name": "Daerah",
+                "alias": "daerah"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3692203,
+              "title": "Inisiatif Crivisaya Ganjar Bantu Penuhi Kebutuhan Pangan Warga di Palembang",
+              "description": "Crivisaya menginisiasi bazar sembako murah di Kecamatan Plaju, Kota Palembang, Sumatera Selatan (Sumsel), Rabu (3/1/2024).",
+              "url": "https://www.akurat.co/daerah/1303692203/inisiatif-crivisaya-ganjar-bantu-penuhi-kebutuhan-pangan-warga-di-palembang",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/03/dbacaf55-4529-4d0a-b291-fe3e379367e1-1675963011.jpeg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/03/dbacaf55-4529-4d0a-b291-fe3e379367e1-1675963011.jpeg",
+              "published_date": "2024-01-03 15:45:00",
+              "section": {
+                "id": 2141,
+                "name": "Daerah",
+                "alias": "daerah"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3688192,
+              "title": "Ganjaran Buruh Berjuang Perluas Struktur Pemenangan Ganjar-Mahfud di Kabupaten Batang",
+              "description": "GBB terus memperluas struktur pemenangan pasangan calon presiden dan calon wakil presiden nomor urut 3 Ganjar Pranowo-Mahfud MD.",
+              "url": "https://www.akurat.co/daerah/1303688192/ganjaran-buruh-berjuang-perluas-struktur-pemenangan-ganjar-mahfud-di-kabupaten-batang",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/02/cb67d5f8-e3f9-4cb9-9a8a-886a876acf2f-2186295012.jpeg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/02/cb67d5f8-e3f9-4cb9-9a8a-886a876acf2f-2186295012.jpeg",
+              "published_date": "2024-01-02 14:55:00",
+              "section": {
+                "id": 2141,
+                "name": "Daerah",
+                "alias": "daerah"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3685526,
+              "title": "Bakal Dibagikan ke Seluruh Pelajar Indonesia, Ganjar Launching Program Internet Gratis di Semarang",
+              "description": "Ganjar Pranowo melaunching program ‘Gratisin’ yakni internet gratis, super cepat, dan merata, bagi pelajar Indonesia.",
+              "url": "https://www.akurat.co/daerah/1303685526/bakal-dibagikan-ke-seluruh-pelajar-indonesia-ganjar-launching-program-internet-gratis-di-semarang",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/01/71b56556-2a6b-40d0-989e-e660765f76a9-2142449226.jpeg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/01/71b56556-2a6b-40d0-989e-e660765f76a9-2142449226.jpeg",
+              "published_date": "2024-01-01 19:31:28",
+              "section": {
+                "id": 2141,
+                "name": "Daerah",
+                "alias": "daerah"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            }
+          ],
+          "page": 1,
+          "total": 49825,
+          "total_page": 4983
+        }
+      }
+    }
   }
 ]

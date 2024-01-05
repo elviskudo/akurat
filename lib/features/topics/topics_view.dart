@@ -1,39 +1,28 @@
 import 'package:cached_query_flutter/cached_query_flutter.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:lucide_icons/lucide_icons.dart';
 
+import '../../pages/_app_state.dart';
 import 'topics_repository.dart';
 import 'widgets/topics_chip_loading.dart';
 
-class TopicsTabBar extends StatefulWidget implements PreferredSizeWidget {
-  const TopicsTabBar({super.key, this.currentIndex = 0});
-
-  final int currentIndex;
-
-  @override
-  State<TopicsTabBar> createState() => _TopicsTabBarState();
+class TopicsTabBar extends ConsumerWidget implements PreferredSizeWidget {
+  const TopicsTabBar({super.key});
 
   @override
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
-}
 
-class _TopicsTabBarState extends State<TopicsTabBar> {
-  late int currentIndex;
-
-  @override
-  void initState() {
-    currentIndex = widget.currentIndex;
-    super.initState();
-  }
-
-  void updateIndex(int index) {
-    setState(() {
-      currentIndex = index;
-    });
+  void _onTap(WidgetRef ref, int index) {
+    ref.read(appNotifierProvider.notifier).setCurrentTopicsTabIndex(index);
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    int currentTabIndex = ref.watch(
+      appNotifierProvider.select((state) => state.topicsTabIndex),
+    );
+
     return QueryBuilder(
       query: TopicsRepository.getTopics(),
       builder: (context, state) {
@@ -59,9 +48,9 @@ class _TopicsTabBarState extends State<TopicsTabBar> {
                   child: FilterChip(
                     showCheckmark: false,
                     label: const Icon(LucideIcons.home, size: 22.0),
-                    selected: currentIndex == 0,
+                    selected: currentTabIndex == 0,
                     onSelected: (bool value) {
-                      updateIndex(0);
+                      _onTap(ref, 0);
                     },
                   ),
                 );
@@ -70,9 +59,9 @@ class _TopicsTabBarState extends State<TopicsTabBar> {
               return FilterChip(
                 showCheckmark: false,
                 label: Text(state.data![index].title),
-                selected: currentIndex == index,
+                selected: currentTabIndex == index,
                 onSelected: (bool value) {
-                  updateIndex(index);
+                  _onTap(ref, index);
                 },
               );
             },

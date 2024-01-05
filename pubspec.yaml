@@ -7,13 +7,16 @@ environment:
   sdk: '>=3.2.3 <4.0.0'
 
 dependencies:
+  cached_network_image: ^3.3.1
   cached_query_flutter: ^1.0.1
   cached_storage: ^1.0.1
+  carousel_slider: ^4.2.1
   dio: ^5.4.0
   dio_mock_interceptor: ^1.0.1
   envied: ^0.5.2
   flutter:
     sdk: flutter
+  flutter_riverpod: ^2.4.9
   flutter_secure_storage: ^9.0.0
   google_fonts: ^6.1.0
   lucide_icons: ^0.257.0

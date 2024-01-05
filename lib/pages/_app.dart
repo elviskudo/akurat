@@ -1,36 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:websafe_svg/websafe_svg.dart';
 
+import '(tab)/home.dart';
+import '(tab)/topics.dart';
 import '../features/topics/topics_view.dart';
-import '../shared/data/src/fss.dart';
 import '../shared/widgets/app_shell.dart';
+import '_app_state.dart';
 
-class Application extends StatefulWidget {
+class Application extends ConsumerWidget {
   const Application({super.key});
 
   @override
-  State<Application> createState() => _ApplicationState();
-}
+  Widget build(BuildContext context, WidgetRef ref) {
+    AppTab currentTab = ref.watch(
+      appNotifierProvider.select((state) => state.currentTab),
+    );
 
-class _ApplicationState extends State<Application> {
-  String? token;
-
-  @override
-  void initState() {
-    super.initState();
-    _setToken();
-  }
-
-  void _setToken() async {
-    final res = await SecureStorage.read('x-access-token');
-
-    setState(() {
-      token = res;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
     return AppShell(
       appBar: AppBar(
         title: WebsafeSvg.asset(
@@ -40,11 +26,12 @@ class _ApplicationState extends State<Application> {
         centerTitle: true,
         bottom: const TopicsTabBar(),
       ),
-      child: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Text(token ??= 'Hello, World!'),
-        ),
+      child: IndexedStack(
+        index: currentTab.index,
+        children: const [
+          HomeTab(),
+          TopicsTab(),
+        ],
       ),
     );
   }
