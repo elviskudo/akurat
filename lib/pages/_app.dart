@@ -29,8 +29,8 @@ class Application extends ConsumerWidget {
       child: IndexedStack(
         index: currentTab.index,
         children: const [
-          HomeTab(),
-          TopicsTab(),
+          HomePage(),
+          TopicsPage(),
         ],
       ),
     );

@@ -3,8 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../_app_state.dart';
 
-class TopicsTab extends ConsumerWidget {
-  const TopicsTab({super.key});
+class TopicsPage extends ConsumerWidget {
+  const TopicsPage({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

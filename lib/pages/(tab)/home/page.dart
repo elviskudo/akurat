@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../features/headline/headline_view.dart';
 import 'widgets/home_tab_section.dart';
 
-class HomeTab extends StatelessWidget {
-  const HomeTab({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
