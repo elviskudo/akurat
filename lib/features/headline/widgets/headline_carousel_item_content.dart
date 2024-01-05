@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../shared/article/article_model.dart';
+import '../../articles/models/article.dart';
 
 class HeadlineCarouselItemContent extends StatelessWidget {
   const HeadlineCarouselItemContent({

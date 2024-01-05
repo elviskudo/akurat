@@ -2,7 +2,7 @@ import 'package:cached_query_flutter/cached_query_flutter.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
-import 'headline_repository.dart';
+import '../articles/headline_repository.dart';
 import 'widgets/headline_carousel_controller.dart';
 import 'widgets/headline_carousel_item.dart';
 import 'widgets/headline_carousel_loading.dart';
@@ -21,7 +21,7 @@ class _HeadlineCarouselState extends State<HeadlineCarousel> {
   @override
   Widget build(BuildContext context) {
     return QueryBuilder(
-      query: HeadlineRepository.getHeadlines(),
+      query: ArticleRepository.getHeadlines(),
       builder: (context, state) {
         if (state.status == QueryStatus.loading || state.data == null) {
           return const HeadlineCarouselLoading();
@@ -45,7 +45,11 @@ class _HeadlineCarouselState extends State<HeadlineCarousel> {
                 },
               ),
               items: state.data!
-                  .map((headline) => HeadlineCarouselItem(headline: headline))
+                  .map(
+                    (headline) => GestureDetector(
+                      child: HeadlineCarouselItem(headline: headline),
+                    ),
+                  )
                   .toList(),
             ),
             const SizedBox(height: 16),

@@ -1,20 +1,21 @@
 import 'dart:convert';
 
-import '../shared/article/article_model.dart';
+import 'article.dart';
 
-class Headline {
+class HeadlineResponseData {
   final List<Article> list;
 
-  Headline({
+  HeadlineResponseData({
     required this.list,
   });
 
-  factory Headline.fromRawJson(String str) =>
-      Headline.fromJson(json.decode(str));
+  factory HeadlineResponseData.fromRawJson(String str) =>
+      HeadlineResponseData.fromJson(json.decode(str));
 
   String toRawJson() => json.encode(toJson());
 
-  factory Headline.fromJson(Map<String, dynamic> json) => Headline(
+  factory HeadlineResponseData.fromJson(Map<String, dynamic> json) =>
+      HeadlineResponseData(
         list: List<Article>.from(json['list'].map((x) => Article.fromJson(x))),
       );
 

@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
-import '../../shared/article/article_model.dart';
+import '../../articles/models/article.dart';
 
 class HeadlineCarouselController extends StatelessWidget {
   const HeadlineCarouselController({

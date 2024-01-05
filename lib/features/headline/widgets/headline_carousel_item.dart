@@ -1,7 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
-import '../../shared/article/article_model.dart';
+import '../../articles/models/article.dart';
 import 'headline_carousel_item_content.dart';
 import 'headline_carousel_loading.dart';
 
