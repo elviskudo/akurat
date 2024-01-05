@@ -2,7 +2,7 @@ import 'package:cached_query_flutter/cached_query_flutter.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
-import '../articles/headline_repository.dart';
+import '../articles/article_repository.dart';
 import 'widgets/headline_carousel_controller.dart';
 import 'widgets/headline_carousel_item.dart';
 import 'widgets/headline_carousel_loading.dart';
