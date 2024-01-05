@@ -1,5 +1,7 @@
 import 'dart:convert';
 
+import 'package:intl/intl.dart';
+
 class Article {
   final String description;
   final int id;
@@ -39,7 +41,9 @@ class Article {
         id: json['id'],
         isVideoContent: json['is_video_content'] == 1 ? true : false,
         photoUrl: json['photo_url'],
-        publishedDate: json['published_date'],
+        publishedDate: DateFormat('d MMMM y, HH:mm WIB').format(
+          DateTime.parse(json['published_date']),
+        ),
         section: json['section'] != null
             ? ArticleSection.fromJson(json['section'])
             : null,

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:websafe_svg/websafe_svg.dart';
 
-import '(tab)/home.dart';
+import '(tab)/home/page.dart';
 import '(tab)/topics.dart';
 import '../features/topics/topics_view.dart';
 import '../shared/widgets/app_shell.dart';

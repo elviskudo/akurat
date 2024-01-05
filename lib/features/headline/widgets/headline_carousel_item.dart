@@ -19,25 +19,37 @@ class HeadlineCarouselItem extends StatelessWidget {
       builder: (BuildContext context) {
         return GestureDetector(
           onTap: () {},
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(8.0),
-            child: Stack(
-              children: [
-                SizedBox(
-                  width: MediaQuery.of(context).size.width,
-                  height: 240.0,
-                  child: CachedNetworkImage(
-                    imageUrl: headline.photoUrl,
-                    fit: BoxFit.cover,
-                    placeholder: (context, url) {
-                      return const HeadlineCarouselLoading();
-                    },
-                    errorWidget: (context, url, error) =>
-                        const Icon(Icons.error),
-                  ),
+          child: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(8.0),
+              boxShadow: const [
+                BoxShadow(
+                  color: Colors.black12,
+                  offset: Offset(0, 0),
+                  blurRadius: 8.0,
                 ),
-                HeadlineCarouselItemContent(headline: headline),
               ],
+            ),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(8.0),
+              child: Stack(
+                children: [
+                  SizedBox(
+                    width: MediaQuery.of(context).size.width,
+                    height: 240.0,
+                    child: CachedNetworkImage(
+                      imageUrl: headline.photoUrl,
+                      fit: BoxFit.cover,
+                      placeholder: (context, url) {
+                        return const HeadlineCarouselLoading();
+                      },
+                      errorWidget: (context, url, error) =>
+                          const Icon(Icons.error),
+                    ),
+                  ),
+                  HeadlineCarouselItemContent(headline: headline),
+                ],
+              ),
             ),
           ),
         );

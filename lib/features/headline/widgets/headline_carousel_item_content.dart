@@ -18,7 +18,6 @@ class HeadlineCarouselItemContent extends StatelessWidget {
       right: 0.0,
       child: Container(
         decoration: BoxDecoration(
-          // gradient from transparent to black with more black percentage
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
@@ -26,7 +25,7 @@ class HeadlineCarouselItemContent extends StatelessWidget {
               Colors.transparent,
               Colors.black.withOpacity(0.6),
               Colors.black.withOpacity(0.8),
-              Colors.black,
+              Colors.black.withOpacity(0.9),
             ],
             stops: const [0, 0.2, 0.6, 0.8],
           ),
@@ -71,6 +70,14 @@ class HeadlineCarouselItemContent extends StatelessWidget {
                 fontSize: 18.0,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
+              ),
+            ),
+            const SizedBox(height: 8.0),
+            Text(
+              headline.publishedDate,
+              style: TextStyle(
+                fontSize: 12.0,
+                color: Colors.white.withOpacity(0.8),
               ),
             ),
           ],
