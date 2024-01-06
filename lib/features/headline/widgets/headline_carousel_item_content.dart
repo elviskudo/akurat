@@ -43,12 +43,11 @@ class HeadlineCarouselItemContent extends StatelessWidget {
               data: Theme.of(context).copyWith(
                 visualDensity: VisualDensity.compact,
               ),
-              child: ActionChip(
+              child: Chip(
                 side: BorderSide.none,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(4.0),
                 ),
-                onPressed: () {},
                 label: Text(headline.section?.name ?? 'Headline'),
                 labelStyle: const TextStyle(
                   fontWeight: FontWeight.bold,

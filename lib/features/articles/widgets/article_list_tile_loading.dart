@@ -26,6 +26,7 @@ class ArticleListTileLoading extends StatelessWidget {
           const SizedBox(width: 16),
           Expanded(
             child: Column(
+              mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Shimmer.fromColors(
@@ -45,7 +46,7 @@ class ArticleListTileLoading extends StatelessWidget {
                   baseColor: Colors.grey[300]!,
                   highlightColor: Colors.grey[100]!,
                   child: Container(
-                    width: double.infinity,
+                    width: 200,
                     height: 14,
                     decoration: BoxDecoration(
                       color: Colors.grey[300],
@@ -58,7 +59,7 @@ class ArticleListTileLoading extends StatelessWidget {
                   baseColor: Colors.grey[300]!,
                   highlightColor: Colors.grey[100]!,
                   child: Container(
-                    width: MediaQuery.of(context).size.width * 0.5,
+                    width: 160,
                     height: 14,
                     decoration: BoxDecoration(
                       color: Colors.grey[300],

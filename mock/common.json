@@ -1152,5 +1152,171 @@
         }
       }
     }
+  },
+  {
+    "path": "/article/read/?id=3695887",
+    "method": "GET",
+    "statusCode": 200,
+    "data": {
+      "meta": {
+        "code": 200,
+        "status": true,
+        "message": ""
+      },
+      "data": {
+        "detail": {
+          "id": 3695887,
+          "title": "NBA Hari Ini: Setelah Menang di Kandang November Lalu, Heat Kini Bungkam Kandang Lakers ",
+          "site": {
+            "id": 130,
+            "name": "Akurat",
+            "alias": "akurat",
+            "url": "https://www.akurat.co",
+            "title": "Akurat.co - Cepat Tepat Benar",
+            "description": "Akurat.co merupakan portal berita yang lahir dari sebuah gagasan untuk menghadirkan informasi yang tidak saja harus cepat, namun juga disajikan secara akurat dengan menyampaikan fakta yang sesungguhnya serta dibahas dengan mendalam (indepth) dan akur",
+            "keyword": "Akurat"
+          },
+          "section": {
+            "id": 2171,
+            "name": "Arena",
+            "title": "Arena",
+            "description": "Arena",
+            "keyword": "Arena",
+            "alias": "arena",
+            "parent": "Olahraga"
+          },
+          "description": "Miami Heat menumbangkan Los Angeles Lakers dengan skor 110-96 di pertandingan NBA hari ini, Rabu (3/1) atau Kamis pagi WIB.",
+          "content": "<p><strong> <!--img1--> </strong></p> <p><strong>AKURAT.CO,</strong> Miami Heat memaksa Los Angeles Lakers menelan tiga kekalahan beruntun melalui laga NBA hari ini, Rabu (3/1) atau Kamis pagi WIB. Heat menumbangkan Lakers dengan skor 110-96.</p> <p>Bertandang ke kandang Los Angeles Lakers di Crypto.com Arena, Los Angeles, Amerika Serikat, Miami Heat langsung unggul sejak awal sampai akhir di laga NBA hari ini. Kemenangan ini mengulang sukses saat menjamu Lakers di kandang pada 6 November lalu.</p> <p>Lakers sempat berusaha mendekat di kuarter keempat pada posisi skor 72-74 melalui tembakan bebas Christian Wood di laga NBA hari ini.</p> <p><strong class=\"read__others\">Baca Juga: <a href=\"https://www.akurat.co/arena/1303234743/nba-hari-ini-usaha-terakhir-lebron-james-gagal-hindarkan-lakers-dari-kekalahan-di-kandang-heat\">NBA Hari Ini: Usaha Terakhir LeBron James Gagal Hindarkan Lakers Dari Kekalahan Di Kandang Heat</a></strong></p> <p>Namun demikian, Duncan Robinson melakukan tembakan tiga angka untuk kembali membawa Miami Heat melebarkan jarak pada posisi 72-77.</p> <p>Tyler Herro menjadi pencetak angka terbanyak dalam kemenangan Heat dengan torehan 21 angka, enam <em>rebound</em>, dan empat <em>assist</em>. Sementara itu, bintang Heat asal Slovenia, Nikola Jovic, mencetak 15 angka, delapan <em>rebound</em>, dan satu <em>assist.</em></p> <p>Miami Heat sebenarnya boleh dibilang telat untuk bisa mencetak banyak angka dari permainan terbuka.</p> <p>Setelah hanya melepaskan 39,1 persen tembakan di tiga kuarter pertama, mereka bangkit di kuarter keempat dengan melakukan 14 tembakan sukses dari 24 percobaan.</p> <p>&ldquo;Malam ini situasinya adalah lebih baik terlambat dari pada tidak sama sekali,&rdquo; kata Duncan Robinson tentang permainan Heat sebagaimana dipetik dari <em>ESPN.</em></p> <p><strong class=\"read__others\">Baca Juga: <a href=\"https://www.akurat.co/arena/1302415849/Kalahkan-Celtics-Di-Game-7-Miami-Heat-Ke-Finall\">Kalahkan Celtics Di Game 7, Miami Heat Ke Finall</a></strong></p> <p>&ldquo;Itu adalah (kuarter) keempat yang baik. Kami melakukan aktivitas yang baik di kedua ujung lapangan dan membuatnya sulit bagi mereka (Lakers) untuk melakukan penjagaan.&rdquo;</p> <p>Sementara itu, Lakers menempatkan Anthony Davis sebagai pencetak angka terbanyak dengan 29 angka, 17 <em>rebound</em>, dan enam <em>assist.</em> Diikuti Austin Reaves di posisi kedua dengan 24 angka, lima <em>rebound,</em> dan delapan <em>assist.</em></p> <p>Kekalahan atas Heat di laga NBA hari ini merupakan kekalahan ke-18 dari 35 laga NBA 2023-2024 yang sudah ditempuh Lakers. Mereka tertahan di posisi kesepuluh klasemen wilayah timur dan tak pernah menang di tiga laga terakhir.</p> <p class=\"class-paragraph\">Sedangkan Heat mencatatkan kemenangan ke-20 dari 34 laga NBA musim ini dengan kemenangan atas Lakers.&nbsp;Saat ini,&nbsp;Miami Heat berada di peringkat keempat klasemen wilayah timur.</p> <p>Hasil Laga NBA Hari Ini, Rabu (3/1) atau Kamis Pagi WIB</p> <p>Cleveland Cavaliers 140-101 Washington Wizards<br /> Indiana Pacers 142-130 Milwaukee Bucks<br /> Atlanta Hawks 141-138 Oklahoma City Thunder<br /> Minnesota Timberwolves 106-117 New Orleans Pelicans<br /> Houston Rockets 112-101 Brooklyn Nets<br /> Memphis Grizzlies 111-116 Toronto Raptors<br /> Dallas Mavericks 126-97 Portland Trail Blazers<br /> New York Knicks 116-100 Chicago Bulls<br /> Phoenix Suns 122-131 Los Angeles Clippers<br /> Utah Jazz 154-148 Detroit Pistons<br /> Sacramento Kings 138-135 Orlando Magic<br /> Los Angeles Lakers 96-110 Miami Heat</p>",
+          "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/04/Heat-vs-LakersJPG-3893866141.jpg",
+          "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/04/Heat-vs-LakersJPG-3893866141.jpg",
+          "url": "https://www.akurat.co/arena/1303695887/nba-hari-ini-setelah-menang-di-kandang-november-lalu-heat-kini-bungkam-kandang-lakers",
+          "short_url": null,
+          "old_url": null,
+          "allow_comment": 1,
+          "allow_wp": 1,
+          "script_tracking": null,
+          "published_by": {
+            "id": 4405,
+            "name": "Hervin Saputra",
+            "email": "ervinbobby.sa@gmail.com",
+            "profile": "",
+            "photo": null
+          },
+          "published_date": "2024-01-04 15:13:22",
+          "created_date": "2024-01-04 15:10:48",
+          "modified_date": "2024-01-04 15:13:22",
+          "old_id": null,
+          "photo": [
+            {
+              "src": "https://static.promediateknologi.id/crop/0x0:0x0/x/photo/p2/130/2024/01/04/Heat-vs-LakersJPG-3893866141.jpg",
+              "block": "<img src=\"https://static.promediateknologi.id/crop/0x0:0x0/x/photo/p2/130/2024/01/04/Heat-vs-LakersJPG-3893866141.jpg\" width=\"100%\" data-crop=\"undefined\" data-caption=\"Pebasket Miami Heat, Nikola Jokic, ketika menjaringkan bola dalam lawatan ke kandang Los Angeles Lakers di Crypto.com Arena, Los Angeles, Amerika Serikat, untuk laga NBA hari ini, Rabu (3/1).\" data-author=\"X/Miami Heat\" data-source=\"\" data-credit=\"\" data-watermark=\"0\" />",
+              "crop": "undefined",
+              "caption": "Pebasket Miami Heat, Nikola Jokic, ketika menjaringkan bola dalam lawatan ke kandang Los Angeles Lakers di Crypto.com Arena, Los Angeles, Amerika Serikat, untuk laga NBA hari ini, Rabu (3/1).",
+              "author": "X/Miami Heat",
+              "source": "",
+              "credit": "",
+              "watermark": "0"
+            }
+          ],
+          "iframe": [],
+          "author": [
+            {
+              "id": 4405,
+              "name": "Hervin Saputra",
+              "email": "ervinbobby.sa@gmail.com",
+              "profile": "",
+              "photo": null
+            }
+          ],
+          "related": [
+            {
+              "id": 3456984,
+              "title": "Turnamen In Season NBA: LA Lakers Juara Usai Singkirkan Indiana Pacers, Anthony Davis Cetak 41 Poin",
+              "description": "LA Lakers keluar sebagai juara perdana Turnamen In Season NBA usai mengalahkan Indiana Pacers dengan skor akhir 123-109",
+              "url": "https://www.akurat.co/arena/1303456984/turnamen-in-season-nba-la-lakers-juara-usai-singkirkan-indiana-pacers-anthony-davis-cetak-41-poin",
+              "short_url": null,
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2023/12/10/lakers-1100324451.jpg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2023/12/10/lakers-1100324451.jpg",
+              "section": "Arena",
+              "alias": "arena",
+              "is_video_content": 0,
+              "section_parent": "Olahraga",
+              "published_date": "2023-12-10 14:44:40"
+            },
+            {
+              "id": 3492491,
+              "title": "NBA Hari Ini: Menang di Kandang, Dallas Mavericks Padamkan Euforia Juara LA Lakers ",
+              "description": "Los Angeles Lakers menyerah dengan skor 125-127 atas Dallas Mavericks di laga NBA hari ini setelah pekan lalu menjuarai Turnamen In Season.",
+              "url": "https://www.akurat.co/arena/1303492491/nba-hari-ini-menang-di-kandang-dallas-mavericks-padamkan-euforia-juara-la-lakers",
+              "short_url": null,
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2023/12/13/Mavs-10JPG-804039976.jpg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2023/12/13/Mavs-10JPG-804039976.jpg",
+              "section": "Arena",
+              "alias": "arena",
+              "is_video_content": 0,
+              "section_parent": "Olahraga",
+              "published_date": "2023-12-13 17:28:10"
+            },
+            {
+              "id": 3636155,
+              "title": "NBA Hari Ini: Kalahkan Lakers, New York Knicks Bikin Triple-Double LeBron James tak Berarti",
+              "description": "Lakers kalah 109-114 di laga NBA hari ini meski LeBron James mencetak triple-double dengan 25 angka, sebelas rebound, dan sebelas assist.",
+              "url": "https://www.akurat.co/arena/1303636155/nba-hari-ini-kalahkan-lakers-new-york-knicks-bikin-triple-double-lebron-james-tak-berarti",
+              "short_url": null,
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2023/12/19/Jalen-BrunsonJPG-3739195940.jpg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2023/12/19/Jalen-BrunsonJPG-3739195940.jpg",
+              "section": "Arena",
+              "alias": "arena",
+              "is_video_content": 0,
+              "section_parent": "Olahraga",
+              "published_date": "2023-12-19 17:31:04"
+            },
+            {
+              "id": 3642922,
+              "title": "NBA Hari Ini: Menang di Kandang, Chicago Bulls Paksa Lakers Telan Tiga Kekalahan Beruntun",
+              "description": "Chicago Bulls menaklukkan Los Angeles Lakers dengan skor 124-108 di laga NBA hari ini, Rabu (20/12) atau Kamis pagi WIB.",
+              "url": "https://www.akurat.co/arena/1303642922/nba-hari-ini-menang-di-kandang-chicago-bulls-paksa-lakers-telan-tiga-kekalahan-beruntun",
+              "short_url": null,
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2023/12/21/Caruso-dunkJPG-2128906312.jpg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2023/12/21/Caruso-dunkJPG-2128906312.jpg",
+              "section": "Arena",
+              "alias": "arena",
+              "is_video_content": 0,
+              "section_parent": "Olahraga",
+              "published_date": "2023-12-21 14:45:12"
+            }
+          ],
+          "source": [],
+          "tag": [
+            {
+              "id": 1612,
+              "name": "los angeles lakers",
+              "slug": ""
+            },
+            {
+              "id": 9398,
+              "name": "miami heat",
+              "slug": ""
+            },
+            {
+              "id": 45371,
+              "name": "anthony davis",
+              "slug": ""
+            },
+            {
+              "id": 583339,
+              "name": "nikola jokic",
+              "slug": ""
+            },
+            {
+              "id": 5416924,
+              "name": "NBA Hari Ini",
+              "slug": "nba-hari-ini"
+            }
+          ],
+          "topic": []
+        }
+      }
+    }
   }
 ]

@@ -14,6 +14,7 @@ class Article {
   String? contentType;
   String? shortUrl;
   ArticleSection? section;
+  String? sectionAlias;
   ArticleSite? site;
   String? pageviews;
 
@@ -31,6 +32,7 @@ class Article {
     this.section,
     this.site,
     this.pageviews,
+    this.sectionAlias,
   });
 
   factory Article.fromRawJson(String str) => Article.fromJson(json.decode(str));
@@ -49,6 +51,7 @@ class Article {
         section: json['section'] != null
             ? ArticleSection.fromJson(json['section'])
             : null,
+        sectionAlias: json['section'] != null ? json['section']['name'] : null,
         site: json['site'] != null ? ArticleSite.fromJson(json['site']) : null,
         thumbUrl: json['thumb_url'] ?? '',
         shortUrl: json['short_url'] ?? '',

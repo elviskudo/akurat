@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
+import '../../../pages/article/[id]/page.dart';
 import '../../articles/models/article.dart';
 import 'headline_carousel_item_content.dart';
 import 'headline_carousel_loading.dart';
@@ -18,7 +19,14 @@ class HeadlineCarouselItem extends StatelessWidget {
     return Builder(
       builder: (BuildContext context) {
         return GestureDetector(
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => ArticleDetailPage(id: headline.id),
+              ),
+            );
+          },
           child: Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8.0),

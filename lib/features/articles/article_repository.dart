@@ -1,8 +1,10 @@
 import 'package:cached_query_flutter/cached_query_flutter.dart';
 
+import '../../env.dart';
 import '../../shared/data/dto/api_result.dart';
 import '../../shared/data/src/dio.dart';
 import 'models/article.dart';
+import 'models/article_detail.dart';
 
 class ArticleRepository {
   static Query<List<Article>> getHeadline() {
@@ -61,6 +63,28 @@ class ArticleRepository {
         );
         final articles = res.data?.list ?? [];
         return articles;
+      },
+    );
+  }
+
+  static Query<ArticleDetail> getDetail(int id) {
+    int articleId = Env.dataSource == 'mock' ? 3695887 : id;
+
+    return Query<ArticleDetail>(
+      key: ['/article/read/?id=$articleId'],
+      queryFn: () async {
+        final raw = await HttpClient.instance.get(
+          '/article/read/?id=$articleId',
+        );
+
+        final res = ApiResult<ArticleDetailResponseData>.fromJson(
+          raw.data,
+          fromJsonT: ArticleDetailResponseData.fromJson,
+        );
+
+        final article = res.data!.detail;
+
+        return article;
       },
     );
   }
