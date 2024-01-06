@@ -21,7 +21,7 @@ class _HeadlineCarouselState extends State<HeadlineCarousel> {
   @override
   Widget build(BuildContext context) {
     return QueryBuilder(
-      query: ArticleRepository.getHeadlines(),
+      query: ArticleRepository.getHeadline(),
       builder: (context, state) {
         if (state.status == QueryStatus.loading || state.data == null) {
           return const HeadlineCarouselLoading();

@@ -15,6 +15,7 @@ class Article {
   String? shortUrl;
   ArticleSection? section;
   ArticleSite? site;
+  String? pageviews;
 
   Article({
     required this.description,
@@ -29,6 +30,7 @@ class Article {
     this.shortUrl,
     this.section,
     this.site,
+    this.pageviews,
   });
 
   factory Article.fromRawJson(String str) => Article.fromJson(json.decode(str));
@@ -36,11 +38,11 @@ class Article {
   String toRawJson() => json.encode(toJson());
 
   factory Article.fromJson(Map<String, dynamic> json) => Article(
-        contentType: json['content_type'],
-        description: json['description'],
+        contentType: json['content_type'] ?? '',
+        description: json['description'] ?? '',
         id: json['id'],
         isVideoContent: json['is_video_content'] == 1 ? true : false,
-        photoUrl: json['photo_url'],
+        photoUrl: json['photo_url'] ?? '',
         publishedDate: DateFormat('d MMMM y, HH:mm WIB').format(
           DateTime.parse(json['published_date']),
         ),
@@ -48,10 +50,15 @@ class Article {
             ? ArticleSection.fromJson(json['section'])
             : null,
         site: json['site'] != null ? ArticleSite.fromJson(json['site']) : null,
-        thumbUrl: json['thumb_url'],
-        shortUrl: json['short_url'],
+        thumbUrl: json['thumb_url'] ?? '',
+        shortUrl: json['short_url'] ?? '',
         title: json['title'],
         url: json['url'],
+        pageviews: json['pageviews'] != null
+            ? NumberFormat.compact(
+                locale: 'id_ID',
+              ).parse(json['pageviews']).toString()
+            : null,
       );
 
   Map<String, dynamic> toJson() => {
@@ -67,6 +74,13 @@ class Article {
         'short_url': shortUrl,
         'section': section?.toJson(),
         'site': site?.toJson(),
+        'pageviews': pageviews != null
+            ? NumberFormat.compact(locale: 'id_ID').format(
+                int.parse(
+                  pageviews!.replaceAll(RegExp(r'[^0-9]'), ''),
+                ),
+              )
+            : null,
       };
 }
 
@@ -129,5 +143,35 @@ class ArticleSite {
         'id': id,
         'name': name,
         'url': url,
+      };
+}
+
+class ArticleResponseData {
+  final List<Article> list;
+
+  ArticleResponseData({
+    required this.list,
+  });
+
+  factory ArticleResponseData.fromRawJson(String str) =>
+      ArticleResponseData.fromJson(json.decode(str));
+
+  String toRawJson() => json.encode(toJson());
+
+  factory ArticleResponseData.fromJson(Map<String, dynamic> json) {
+    // check if json['list] is array or object
+    final hasLatest = json['list'] is Map<String, dynamic>;
+
+    return ArticleResponseData(
+      list: List<Article>.from(
+        hasLatest
+            ? json['list']['latest'].map((x) => Article.fromJson(x))
+            : json['list'].map((x) => Article.fromJson(x)),
+      ),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+        'list': List<dynamic>.from(list.map((x) => x.toJson())),
       };
 }

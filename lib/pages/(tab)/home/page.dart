@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '../../../features/headline/headline_view.dart';
+import 'widgets/editors_pick_list.dart';
 import 'widgets/home_tab_section.dart';
+import 'widgets/latest_list.dart';
+import 'widgets/popular_list.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -18,18 +21,10 @@ class HomePage extends StatelessWidget {
           children: [
             SizedBox(height: 24),
             HeadlineCarousel(),
-            HomeTabSection(
-              title: 'Berita Terkini',
-              child: Text('Berita Terkini Vertical List'),
-            ),
-            HomeTabSection(
-              title: 'Editor\'s Pick',
-              child: Text('Editor\'s Pick Carousel'),
-            ),
-            HomeTabSection(
-              title: 'Populer',
-              child: Text('Populer Vertical List'),
-            ),
+            HomeTabSection(title: 'Berita Terkini', child: LatestList()),
+            HomeTabSection(title: 'Pilihan Editor', child: EditorsPickList()),
+            HomeTabSection(title: 'Populer', child: PopularList()),
+            SizedBox(height: 24),
           ],
         ),
       ),

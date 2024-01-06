@@ -560,7 +560,360 @@
     }
   },
   {
-    "path": "/article/popular/?page=1&section_id=2141",
+    "path": "/article/latest/",
+    "method": "GET",
+    "statusCode": 200,
+    "data": {
+      "meta": {
+        "code": 200,
+        "status": true,
+        "message": ""
+      },
+      "data": {
+        "list": {
+          "latest": [
+            {
+              "id": 3703045,
+              "title": "Erick Thohir Sebut Prabowo dan Jokowi Seperti Dua Aliran Sungai yang Bertemu, Bersatu Jadi Lebih Kuat",
+              "description": "Erick Thohir turut membagikan momen saat Presiden Joko Widodo makan malam bersama capres nomor urut 2, Prabowo Subianto melalui instagram.",
+              "url": "https://www.akurat.co/politik/1303703045/erick-thohir-sebut-prabowo-dan-jokowi-seperti-dua-aliran-sungai-yang-bertemu-bersatu-jadi-lebih-kuat",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/05/pak-2706356743.jpg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/05/pak-2706356743.jpg",
+              "published_date": "2024-01-06 14:00:00",
+              "section": {
+                "id": 2138,
+                "name": "Politik",
+                "alias": "politik"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3703086,
+              "title": "Saipul Jamil Teriak Histeris Saat Ditangkap, Kuasa Hukum: Dia Ketakutan",
+              "description": "Pendangdut Saipul Jamil membuat geger sosial media saat video penangkapannya tersebar luas. Penangkapan mantan suami Dewi Perssik itu diduga",
+              "url": "https://www.akurat.co/selebriti/1303703086/saipul-jamil-teriak-histeris-saat-ditangkap-kuasa-hukum-dia-ketakutan",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/06/IMG_20240106_132215-1079483973.jpg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/06/IMG_20240106_132215-1079483973.jpg",
+              "published_date": "2024-01-06 13:32:27",
+              "section": {
+                "id": 2149,
+                "name": "Selebriti",
+                "alias": "selebriti"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3703060,
+              "title": "NBA Hari Ini: Aksi Paolo Banchero di Ujung Laga Bikin Magic Menang di Kandang Nuggets",
+              "description": "Adalah Orlando Magic yang menumbangkan Denver Nuggets dengan skor 122-120 di laga NBA hari ini lewat aksi Paolo Banchero.",
+              "url": "https://www.akurat.co/arena/1303703060/nba-hari-ini-aksi-paolo-banchero-di-ujung-laga-bikin-magic-menang-di-kandang-nuggets",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/06/Orlando-MagicJPG-1100929703.jpg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/06/Orlando-MagicJPG-1100929703.jpg",
+              "published_date": "2024-01-06 13:17:32",
+              "section": {
+                "id": 2171,
+                "name": "Arena",
+                "alias": "arena"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3702853,
+              "title": "Mengenal Fenomena Krisis Properti China dan Dampaknya ke Perekonomian",
+              "description": "Pertumbuhan sektor properti China yang pesat diikuti oleh peningkatan risiko karena banyak pembangunan properti dibiayai melalui utang",
+              "url": "https://www.akurat.co/rill/1303702853/mengenal-fenomena-krisis-properti-china-dan-dampaknya-ke-perekonomian",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/akuratco/322893920852.jpg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/akuratco/322893920852.jpg",
+              "published_date": "2024-01-06 13:00:00",
+              "section": {
+                "id": 2145,
+                "name": "Rill",
+                "alias": "rill"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3702890,
+              "title": "Jubir Prabowo Pastikan Panelis dari Unhan Independen, Tidak Terlibat Politik Praktis",
+              "description": "Dahnil memastikan bahwa panelis yang berasa dari Unhan tidak punya afiliasi politik apapun dan ke siapapun.",
+              "url": "https://www.akurat.co/politik/1303702890/jubir-prabowo-pastikan-panelis-dari-unhan-independen-tidak-terlibat-politik-praktis",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/akuratco/images/akurat_20190708122053_7W651t.jpg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/akuratco/images/akurat_20190708122053_7W651t.jpg",
+              "published_date": "2024-01-06 13:00:00",
+              "section": {
+                "id": 2138,
+                "name": "Politik",
+                "alias": "politik"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3702949,
+              "title": "Jadwal Siaran Langsung Sepakbola Eropa Malam Ini: Inter Milan vs Verona, Chelsea vs Preston",
+              "description": "Jadwal siaran langsung sepakbola Eropa malam ini akan tersaji di Inggris dengan Piala FA dan Italia di Serie A.",
+              "url": "https://www.akurat.co/bola/1303702949/jadwal-siaran-langsung-sepakbola-eropa-malam-ini-inter-milan-vs-verona-chelsea-vs-preston",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/akuratco/images/akurat_20200628095726_Mxd1ly.jpg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/akuratco/images/akurat_20200628095726_Mxd1ly.jpg",
+              "published_date": "2024-01-06 12:31:27",
+              "section": {
+                "id": 2168,
+                "name": "Bola",
+                "alias": "bola"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3702693,
+              "title": "Jumlah Pelanggan PLN dari Sekor Agrikultur Naik 25 Persen Sepanjang 2023",
+              "description": "Jumlah pelanggan PT PLN (Persero) dari sektor agrikultur seperti pertanian, perikanan, perkebunan hingga peternakan naik 25% di 2023",
+              "url": "https://www.akurat.co/rill/1303702693/jumlah-pelanggan-pln-dari-sekor-agrikultur-naik-25-persen-sepanjang-2023",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/06/PLNPNG-4001595476.png",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/06/PLNPNG-4001595476.png",
+              "published_date": "2024-01-06 12:00:00",
+              "section": {
+                "id": 2145,
+                "name": "Rill",
+                "alias": "rill"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3702849,
+              "title": "Eddie Hearn: Deal! Francis Ngannou vs Anthony Joshua Digelar di Riyadh",
+              "description": "Eddie Hearn menyebut pertarungan Anthony Joshua vs Francis Ngannou digelar di Arab Saudi namun belum menentukan jadwal.",
+              "url": "https://www.akurat.co/arena/1303702849/eddie-hearn-deal-francis-ngannou-vs-anthony-joshua-digelar-di-riyadh",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/06/Francis-vs-AnthonyJPG-2677301652.jpg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/06/Francis-vs-AnthonyJPG-2677301652.jpg",
+              "published_date": "2024-01-06 11:57:07",
+              "section": {
+                "id": 2171,
+                "name": "Arena",
+                "alias": "arena"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3702781,
+              "title": "Berhadiah Rp174 Juta, BTN Kembali Gelar Anugerah Jurnalistik dan Foto Jelang HUT Ke-74",
+              "description": "BTN kembali menggelar Anugerah Jurnalistik dan Foto BTN untuk menyemarakkan perayaan Hari Ulang Tahun ke-74 berhadiah Rp174 juta",
+              "url": "https://www.akurat.co/rill/1303702781/berhadiah-rp174-juta-btn-kembali-gelar-anugerah-jurnalistik-dan-foto-jelang-hut-ke-74",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/06/WhatsApp-Image-2024-01-06-at-112741-AM-1270229993.jpeg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/06/WhatsApp-Image-2024-01-06-at-112741-AM-1270229993.jpeg",
+              "published_date": "2024-01-06 11:37:35",
+              "section": {
+                "id": 2145,
+                "name": "Rill",
+                "alias": "rill"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3702613,
+              "title": "Menlu Paparkan Data Diplomasi Ekonomi, Bawa Untung Banyak Buat Indonesia",
+              "description": "Berdasarkan data Kemenlu, dari Januari hingga November 2023, perdagangan ekspor Indonesia mencapai USD439,1 miliar.\n",
+              "url": "https://www.akurat.co/rill/1303702613/menlu-paparkan-data-diplomasi-ekonomi-bawa-untung-banyak-buat-indonesia",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/akuratco/images/akurat_20210113053827_F85UP7.jpg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/akuratco/images/akurat_20210113053827_F85UP7.jpg",
+              "published_date": "2024-01-06 11:30:00",
+              "section": {
+                "id": 2145,
+                "name": "Rill",
+                "alias": "rill"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            }
+          ],
+          "page": 1,
+          "total": 610932,
+          "total_page": 61094
+        }
+      }
+    }
+  },
+  {
+    "path": "/article/editor-pick/",
+    "method": "GET",
+    "statusCode": 200,
+    "data": {
+      "meta": {
+        "code": 200,
+        "status": true,
+        "message": ""
+      },
+      "data": {
+        "list": [
+          {
+            "id": 3700370,
+            "title": "Wapres Sebut Kecelakaan Kereta di Bandung Fatal ",
+            "description": "Wapres Ma'ruf Amin menyebut kecelakaan kereta di Bandung fatal. Dia meminta penyebab kecelakaan diinvestigasi dan harus ada evaluasi.",
+            "url": "https://www.akurat.co/nasional/1303700370/wapres-sebut-kecelakaan-kereta-di-bandung-fatal",
+            "short_url": null,
+            "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/05/antarafoto-kecelakaan-kereta-di-cicalengka-05012024-rai-2-3514334711.jpg",
+            "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/05/antarafoto-kecelakaan-kereta-di-cicalengka-05012024-rai-2-3514334711.jpg",
+            "published_date": "2024-01-05 16:47:46",
+            "section": {
+              "id": 2137,
+              "name": "Nasional",
+              "alias": "nasional"
+            },
+            "is_video_content": 0
+          },
+          {
+            "id": 3700350,
+            "title": "Kronologi Satria Mahathir ‘Cogil’ Ditangkap Polisi, Diduga Berani Keroyok Anak Pejabat",
+            "description": "Satria Cogil dan ketiga rekannya yang lain berhasil ditangkap oleh polisi setempat, akibat dugaan aksi pengeroyokan terhadap anak pejabat.",
+            "url": "https://www.akurat.co/viral/1303700350/kronologi-satria-mahathir-cogil-ditangkap-polisi-diduga-berani-keroyok-anak-pejabat",
+            "short_url": null,
+            "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/05/1_20240105_162913_0000-3743248102.png",
+            "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/05/1_20240105_162913_0000-3743248102.png",
+            "published_date": "2024-01-05 16:35:06",
+            "section": {
+              "id": 2151,
+              "name": "Viral",
+              "alias": "viral"
+            },
+            "is_video_content": 0
+          },
+          {
+            "id": 3700336,
+            "title": "KA Turangga - Bandung Raya Tabrakan, Ini Maksud di Balik Lampu Sinyal Kereta Api",
+            "description": "Kecelakaan hebat antara Kereta api (KA) Turangga dengan KA lokal Bandung Raya telah menelan korban jiwa. Tabrakan kereta ini terjadi di peta",
+            "url": "https://www.akurat.co/infotech/1303700336/ka-turangga-bandung-raya-tabrakan-ini-maksud-di-balik-lampu-sinyal-kereta-api",
+            "short_url": null,
+            "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/05/WhatsApp-Image-2024-01-05-at-153651-1-1-139476147.jpeg",
+            "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/05/WhatsApp-Image-2024-01-05-at-153651-1-1-139476147.jpeg",
+            "published_date": "2024-01-05 17:22:12",
+            "section": {
+              "id": 2166,
+              "name": "Infotech",
+              "alias": "infotech"
+            },
+            "is_video_content": 0
+          },
+          {
+            "id": 3700167,
+            "title": "Rupiah Turun Lagi 25 Poin ke Rp15.516 Jelang Rilis Data Nonfarm Payrolls AS",
+            "description": "Rupiah ditutup melemah 25 poin ke Rp15.516 pada perdagangan Jumat, 5 Januari 2024 jelang rilis data nonfarm payrolls AS",
+            "url": "https://www.akurat.co/makro/1303700167/rupiah-turun-lagi-25-poin-ke-rp15516-jelang-rilis-data-nonfarm-payrolls-as",
+            "short_url": null,
+            "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/akuratco/bank_image/akurat_20200608100657_9Z7291.jpg",
+            "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/akuratco/bank_image/akurat_20200608100657_9Z7291.jpg",
+            "published_date": "2024-01-05 15:45:54",
+            "section": {
+              "id": 2143,
+              "name": "Makro",
+              "alias": "makro"
+            },
+            "is_video_content": 0
+          },
+          {
+            "id": 3700117,
+            "title": "Polri Bantah Ferdy Sambo dan Bharada E Tak Pernah Berada dalam Sel",
+            "description": "Polri bantah tudingan Alvin Lim yang menyebut Ferdy Sambo dan Bharada E tak pernah berada dalam sel. Kedunya mejalani penahanan.",
+            "url": "https://www.akurat.co/hukum/1303700117/polri-bantah-ferdy-sambo-dan-bharada-e-tak-pernah-berada-dalam-sel",
+            "short_url": null,
+            "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/akurat/gallery/2023/01/big/gal_63d8c01b378853-50674899-830876161.jpg",
+            "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/akurat/gallery/2023/01/big/gal_63d8c01b378853-50674899-830876161.jpg",
+            "published_date": "2024-01-05 15:40:55",
+            "section": {
+              "id": 2139,
+              "name": "Hukum",
+              "alias": "hukum"
+            },
+            "is_video_content": 0
+          },
+          {
+            "id": 3700173,
+            "title": "Shin Tae-yong: Saya Mohon Suporter Jangan Bicara Kasar kepada Pemain Timnas Indonesia",
+            "description": "Shin Tae-yong menyadari pendukung Timnas Indonesia kecewa terkait hasil ini. Sebab kecintaan suporter terhada Timnas Indonesia sangat besar.",
+            "url": "https://www.akurat.co/bola/1303700173/shin-tae-yong-saya-mohon-suporter-jangan-bicara-kasar-kepada-pemain-timnas-indonesia",
+            "short_url": null,
+            "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2023/11/15/WhatsApp-Image-2023-11-15-at-54831-PM-224927523.jpeg",
+            "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2023/11/15/WhatsApp-Image-2023-11-15-at-54831-PM-224927523.jpeg",
+            "published_date": "2024-01-05 15:48:09",
+            "section": {
+              "id": 2168,
+              "name": "Bola",
+              "alias": "bola"
+            },
+            "is_video_content": 0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "path": "/popular/",
     "method": "GET",
     "statusCode": 200,
     "data": {
