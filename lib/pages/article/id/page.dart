@@ -2,7 +2,7 @@ import 'package:cached_query_flutter/cached_query_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
 
-import '../../(tab)/home/widgets/home_tab_section.dart';
+import '../../tab/home/widgets/home_tab_section.dart';
 import '../../../features/articles/article_repository.dart';
 import '../../../features/articles/widgets/article_list_tile.dart';
 import 'widget/article_detail_app_bar.dart';
