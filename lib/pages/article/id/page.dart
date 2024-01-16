@@ -2,9 +2,10 @@ import 'package:cached_query_flutter/cached_query_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
 
-import '../../tab/home/widgets/home_tab_section.dart';
 import '../../../features/articles/article_repository.dart';
 import '../../../features/articles/widgets/article_list_tile.dart';
+import '../../tab/home/widgets/home_tab_section.dart';
+import '../tag/page.dart';
 import 'widget/article_detail_app_bar.dart';
 
 class ArticleDetailPage extends StatefulWidget {
@@ -122,7 +123,15 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
                               children: state.data!.tag.map((e) {
                                 return ActionChip(
                                   label: Text(e.name),
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) =>
+                                            TagPage(tag: e.name),
+                                      ),
+                                    );
+                                  },
                                 );
                               }).toList(),
                             ),

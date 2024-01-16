@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:lucide_icons/lucide_icons.dart';
 
 import '../../../pages/article/id/page.dart';
+import '../../../pages/article/tag/page.dart';
 import '../models/article.dart';
 
 class ArticleListTile extends StatelessWidget {
@@ -46,7 +47,19 @@ class ArticleListTile extends StatelessWidget {
               data: Theme.of(context).copyWith(
                 visualDensity: VisualDensity.compact,
               ),
-              child: Chip(
+              child: ActionChip(
+                onPressed: () {
+                  if (article.section != null) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => TagPage(
+                          tag: article.section!.name,
+                        ),
+                      ),
+                    );
+                  }
+                },
                 side: BorderSide.none,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(4.0),

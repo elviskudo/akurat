@@ -39,30 +39,42 @@ class Article {
 
   String toRawJson() => json.encode(toJson());
 
-  factory Article.fromJson(Map<String, dynamic> json) => Article(
-        contentType: json['content_type'] ?? '',
-        description: json['description'] ?? '',
-        id: json['id'],
-        isVideoContent: json['is_video_content'] == 1 ? true : false,
-        photoUrl: json['photo_url'] ?? '',
-        publishedDate: DateFormat('d MMMM y, HH:mm WIB').format(
-          DateTime.parse(json['published_date']),
-        ),
-        section: json['section'] != null
-            ? ArticleSection.fromJson(json['section'])
-            : null,
-        sectionAlias: json['section'] != null ? json['section']['name'] : null,
-        site: json['site'] != null ? ArticleSite.fromJson(json['site']) : null,
-        thumbUrl: json['thumb_url'] ?? '',
-        shortUrl: json['short_url'] ?? '',
-        title: json['title'],
-        url: json['url'],
-        pageviews: json['pageviews'] != null
-            ? NumberFormat.compact(
-                locale: 'id_ID',
-              ).format(json['pageviews']).toString()
-            : null,
-      );
+  factory Article.fromJson(Map<String, dynamic> json) {
+    String publisedDate(String date) {
+      try {
+        return DateFormat('d MMMM y, HH:mm WIB').format(
+          DateTime.parse(date),
+        );
+      } catch (e) {
+        return date;
+      }
+    }
+
+    return Article(
+      contentType: json['content_type'] ?? '',
+      description: json['description'] ?? '',
+      id: json['id'],
+      isVideoContent: json['is_video_content'] == 1 ? true : false,
+      photoUrl: json['photo_url'] ?? '',
+      publishedDate: json['published_date'] != null
+          ? publisedDate(json['published_date'])
+          : '',
+      section: json['section'] != null
+          ? ArticleSection.fromJson(json['section'])
+          : null,
+      sectionAlias: json['section'] != null ? json['section']['name'] : null,
+      site: json['site'] != null ? ArticleSite.fromJson(json['site']) : null,
+      thumbUrl: json['thumb_url'] ?? '',
+      shortUrl: json['short_url'] ?? '',
+      title: json['title'],
+      url: json['url'],
+      pageviews: json['pageviews'] != null
+          ? NumberFormat.compact(
+              locale: 'id_ID',
+            ).format(json['pageviews']).toString()
+          : null,
+    );
+  }
 
   Map<String, dynamic> toJson() => {
         'content_type': contentType,
@@ -151,9 +163,15 @@ class ArticleSite {
 
 class ArticleResponseData {
   final List<Article> list;
+  int? page;
+  int? total;
+  int? totalPage;
 
   ArticleResponseData({
     required this.list,
+    this.page,
+    this.total,
+    this.totalPage,
   });
 
   factory ArticleResponseData.fromRawJson(String str) =>
@@ -163,13 +181,35 @@ class ArticleResponseData {
 
   factory ArticleResponseData.fromJson(Map<String, dynamic> json) {
     // check if json['list] is array or object
-    final hasLatest = json['list'] is Map<String, dynamic>;
+    final hasLatest = json['list'] is Map<String, dynamic> &&
+        json['list'].containsKey('latest');
+    final hasPage = json['list'] is Map<String, dynamic> &&
+        json['list'].containsKey('page');
+
+    if (hasLatest && !hasPage) {
+      return ArticleResponseData(
+        list: List<Article>.from(
+          json['list']['latest'].map((x) => Article.fromJson(x)),
+        ),
+      );
+    }
+
+    if (hasLatest && hasPage) {
+      return ArticleResponseData(
+        list: List<Article>.from(
+          json['list']['latest'].map((x) => Article.fromJson(x)),
+        ),
+        page: json['list']['page'] is String
+            ? int.parse(json['list']['page'])
+            : json['list']['page'],
+        total: json['list']['total'],
+        totalPage: json['list']['total_page'],
+      );
+    }
 
     return ArticleResponseData(
       list: List<Article>.from(
-        hasLatest
-            ? json['list']['latest'].map((x) => Article.fromJson(x))
-            : json['list'].map((x) => Article.fromJson(x)),
+        json['list'].map((x) => Article.fromJson(x)),
       ),
     );
   }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lucide_icons/lucide_icons.dart';
 
+import '../../../pages/article/tag/page.dart';
 import '../menu_model.dart';
 
 class AppDrawerItem extends StatelessWidget {
@@ -26,7 +27,13 @@ class AppDrawerItem extends StatelessWidget {
                 children: [
                   ListTile(
                     title: Text(child.title),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => TagPage(tag: child.name),
+                        ),
+                      );
+                    },
                   ),
                 ],
               ),
@@ -38,7 +45,13 @@ class AppDrawerItem extends StatelessWidget {
     return ListTile(
       leading: const Icon(LucideIcons.shapes),
       title: Text(menu.title),
-      onTap: () {},
+      onTap: () {
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => TagPage(tag: menu.name),
+          ),
+        );
+      },
     );
   }
 }

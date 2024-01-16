@@ -13,8 +13,10 @@ class TopicsTabBar extends ConsumerWidget implements PreferredSizeWidget {
   @override
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 
-  void _onTap(WidgetRef ref, int index) {
-    ref.read(appNotifierProvider.notifier).setCurrentTopicsTabIndex(index);
+  void _onTap(WidgetRef ref, {required int index, String? tag}) {
+    ref
+        .read(appNotifierProvider.notifier)
+        .setCurrentTopicsTabIndex(index, tag: tag);
   }
 
   @override
@@ -50,7 +52,7 @@ class TopicsTabBar extends ConsumerWidget implements PreferredSizeWidget {
                     label: const Icon(LucideIcons.home, size: 22.0),
                     selected: currentTabIndex == 0,
                     onSelected: (bool value) {
-                      _onTap(ref, 0);
+                      _onTap(ref, index: 0);
                     },
                   ),
                 );
@@ -61,7 +63,11 @@ class TopicsTabBar extends ConsumerWidget implements PreferredSizeWidget {
                 label: Text(state.data![index].title),
                 selected: currentTabIndex == index,
                 onSelected: (bool value) {
-                  _onTap(ref, index);
+                  _onTap(
+                    ref,
+                    index: index,
+                    tag: state.data![index].title,
+                  );
                 },
               );
             },

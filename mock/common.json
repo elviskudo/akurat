@@ -1318,5 +1318,487 @@
         }
       }
     }
+  },
+  {
+    "path": "/article/tag/?tag=bandung&page=1",
+    "method": "GET",
+    "statusCode": 200,
+    "data": {
+      "meta": {
+        "code": 200,
+        "status": true,
+        "message": ""
+      },
+      "data": {
+        "list": {
+          "latest": [
+            {
+              "id": 3771400,
+              "title": "Mahasiswa Bandung Minta Pemilu 2024 Bebas Intervensi Presiden",
+              "description": "Mahasiswa Bandung menolak intervensi presiden pada Pemilu 2024. Generasi Z harus melek politik dan mengeritisi gelaran pemilu.",
+              "url": "https://www.akurat.co/daerah/1303771400/mahasiswa-bandung-minta-pemilu-2024-bebas-intervensi-presiden",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/16/WhatsApp-Image-2024-01-16-at-104810-919455455.jpeg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/16/WhatsApp-Image-2024-01-16-at-104810-919455455.jpeg",
+              "published_date": "2024-01-16 16:05:25",
+              "section": {
+                "id": 2141,
+                "name": "Daerah",
+                "alias": "daerah"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3725483,
+              "title": "Simak Penyebab dan Sejarah Banjir di Kota Bandung",
+              "description": "Banjir merupakan salah satu bencana alam yang sering terjadi di Kota Bandung. Banjir di Kota Bandung disebabkan oleh berbagai faktor, antara",
+              "url": "https://www.akurat.co/travel/1303725483/simak-penyebab-dan-sejarah-banjir-di-kota-bandung",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/12/antarafoto-warga-terdampak-banjir-bandung-selatan-120124-na-3-3338125433.jpg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/12/antarafoto-warga-terdampak-banjir-bandung-selatan-120124-na-3-3338125433.jpg",
+              "published_date": "2024-01-12 19:25:30",
+              "section": {
+                "id": 2162,
+                "name": "Travel",
+                "alias": "travel"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3723770,
+              "title": "5 Rekomendasi Tempat Wisata di Bandung yang Dekat dengan Stasiun, Cocok Buat Semua Usia",
+              "description": "Bandung merupakan salah satu kota di Jawa Barat yang sering dijadikan destinasi karena banyaknya wisata favorit di kota ini.",
+              "url": "https://www.akurat.co/travel/1303723770/5-rekomendasi-tempat-wisata-di-bandung-yang-dekat-dengan-stasiun-cocok-buat-semua-usia",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/12/Untitled-design-66-1642855813.png",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/12/Untitled-design-66-1642855813.png",
+              "published_date": "2024-01-12 12:21:40",
+              "section": {
+                "id": 2162,
+                "name": "Travel",
+                "alias": "travel"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3721571,
+              "title": "Peringatan untuk Pengguna Knalpon Brong, Kakorlantas Polri: Sudah 430 Ribu Pengendara yang Kita Tindak",
+              "description": "Kakorlantas Polri, Irjen Pol. Aan Suhanan, melakukan rilis knalpot bising di Jajaran Polda Jawa Barat, di Polrestabes Bandung, pada Kamis.",
+              "url": "https://www.akurat.co/hukum/1303721571/peringatan-untuk-pengguna-knalpon-brong-kakorlantas-polri-sudah-430-ribu-pengendara-yang-kita-tindak",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/11/IMG_2196-4037557241.jpeg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/11/IMG_2196-4037557241.jpeg",
+              "published_date": "2024-01-11 19:01:12",
+              "section": {
+                "id": 2139,
+                "name": "Hukum",
+                "alias": "hukum"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3719314,
+              "title": "Untuk Perbaikan Negeri, Ulama se-Cimahi dan Bandung Pilih Ganjar-Mahfud",
+              "description": "Jaringan ulama dan kiai Ahlussunah wal Jamaah Indonesia wilayah Cimahi dan Bandung menginisiasi Halaqoh Kebangsaan di Pondok Pesantren Darul",
+              "url": "https://www.akurat.co/politik/1303719314/untuk-perbaikan-negeri-ulama-se-cimahi-dan-bandung-pilih-ganjar-mahfud",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/11/c3e5e032-442b-4992-99ed-15fea54e9aba-358119572.jpeg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/11/c3e5e032-442b-4992-99ed-15fea54e9aba-358119572.jpeg",
+              "published_date": "2024-01-11 09:10:00",
+              "section": {
+                "id": 2138,
+                "name": "Politik",
+                "alias": "politik"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3706083,
+              "title": "David da Silva dan Ciro Alves Mati Kutu, Persib Bandung Pertajam Pemain Lain",
+              "description": "Persib Bandung bakal kembali berlatih pasca libur panjang jeda kompetisi Liga 1 2023-2024. Seluruh pemain Maung Bandung dipinta ",
+              "url": "https://www.akurat.co/bola/1303706083/david-da-silva-dan-ciro-alves-mati-kutu-persib-bandung-pertajam-pemain-lain",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/akurat/gallery/2022/09/big/gal_631480e7c2c957-22601400-98536563.JPG",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/akurat/gallery/2022/09/big/gal_631480e7c2c957-22601400-98536563.JPG",
+              "published_date": "2024-01-07 17:25:44",
+              "section": {
+                "id": 2168,
+                "name": "Bola",
+                "alias": "bola"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3704074,
+              "title": "Jasa Raharja dan KAI Serahkan Santunan Korban Kecelakaan Kereta Api di Cicalengka, Segini Nilainya",
+              "description": "Jasa Raharja dan PT Kereta Api Indonesia (KAI) memberikan santunan kepada keluarga korban insiden kecelakaan kereta api di Cicalengka",
+              "url": "https://www.akurat.co/keuangan/1303704074/jasa-raharja-dan-kai-serahkan-santunan-korban-kecelakaan-kereta-api-di-cicalengka-segini-nilainya",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/05/antarafoto-evakuasi-korban-kecelakaan-kereta-050124-rai-9-3342370662.jpg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/05/antarafoto-evakuasi-korban-kecelakaan-kereta-050124-rai-9-3342370662.jpg",
+              "published_date": "2024-01-06 20:08:25",
+              "section": {
+                "id": 2144,
+                "name": "Keuangan",
+                "alias": "keuangan"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3701767,
+              "title": "Mengenal Sosok Masinis Julian Dwi Setiono, Korban Tragedi Kecelakaan Maut KA Turangga di Cicalengka",
+              "description": "Terjadi insiden kecelakaan di Cicalengka, Kabupaten Bandung yang melibatkan dua kereta, Jumat (5/1/2024). ",
+              "url": "https://www.akurat.co/love/1303701767/mengenal-sosok-masinis-julian-dwi-setiono-korban-tragedi-kecelakaan-maut-ka-turangga-di-cicalengka",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/05/IMG_20240105_143030_copy_1244x1083-956786646-3448748935.jpg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/05/IMG_20240105_143030_copy_1244x1083-956786646-3448748935.jpg",
+              "published_date": "2024-01-05 23:23:27",
+              "section": {
+                "id": 2160,
+                "name": "Love",
+                "alias": "love"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3701462,
+              "title": "Waspada Barudak Persib Bandung, Bojan Hodak Tak Segan Sisihkan Pemain Gembrot ",
+              "description": "Pelatih Persib Bandung, Bojan Hodak menegaskan dirinya bersama tim pelatih akan menyiapkan tes fisik dan kebugaran selepas liburan. ",
+              "url": "https://www.akurat.co/bola/1303701462/waspada-barudak-persib-bandung-bojan-hodak-tak-segan-sisihkan-pemain-gembrot",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/akuratco/images/akurat_20200313010753_j076Iv.jpg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/akuratco/images/akurat_20200313010753_j076Iv.jpg",
+              "published_date": "2024-01-05 21:27:55",
+              "section": {
+                "id": 2168,
+                "name": "Bola",
+                "alias": "bola"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3700787,
+              "title": "Peran Heroik Masinis Kereta Api, Navigasi Aman di Tengah Darurat hingga Bertaruh Nyawa",
+              "description": "Peran Heroik Masinis Kereta Api, Navigasi Aman di Tengah Darurat hingga Bertaruh Nyawa sosok dua masinis KA Lokal Bandung Raya tidak ter...",
+              "url": "https://www.akurat.co/travel/1303700787/peran-heroik-masinis-kereta-api-navigasi-aman-di-tengah-darurat-hingga-bertaruh-nyawa",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/05/Masinis-Julian-KA-Lodaya-1-1241086390.jpg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/05/Masinis-Julian-KA-Lodaya-1-1241086390.jpg",
+              "published_date": "2024-01-05 18:55:00",
+              "section": {
+                "id": 2162,
+                "name": "Travel",
+                "alias": "travel"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            }
+          ],
+          "page": "1",
+          "total": 77,
+          "total_page": 8
+        }
+      }
+    }
+  },
+  {
+    "path": "/article/search/?q=bandung&page=1",
+    "method": "GET",
+    "statusCode": 200,
+    "data": {
+      "meta": {
+        "code": 200,
+        "status": true,
+        "message": ""
+      },
+      "data": {
+        "list": {
+          "latest": [
+            {
+              "id": 3700665,
+              "title": "Antara Tragedi Bintaro 1987 dan Kecelakaan KA Turangga dengan KA Lokal Bandung Raya ",
+              "description": "Kecelakaan KA Turangga dengan KA Lokal Bandung Raya mengingatkan masyarakat dengan Kecelakaan Kereta Api Maut Tragedi Bintaro pada 1987.",
+              "url": "https://www.akurat.co/travel/1303700665/antara-tragedi-bintaro-1987-dan-kecelakaan-ka-turangga-dengan-ka-lokal-bandung-raya",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/05/Tragedi-Bintaro-3226535325.jpeg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/05/Tragedi-Bintaro-3226535325.jpeg",
+              "published_date": "2024-01-05 18:07:41",
+              "section": {
+                "id": 2162,
+                "name": "Travel",
+                "alias": "travel"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3700336,
+              "title": "KA Turangga - Bandung Raya Tabrakan, Ini Maksud di Balik Lampu Sinyal Kereta Api",
+              "description": "Kecelakaan hebat antara Kereta api (KA) Turangga dengan KA lokal Bandung Raya telah menelan korban jiwa. Tabrakan kereta ini terjadi di peta",
+              "url": "https://www.akurat.co/infotech/1303700336/ka-turangga-bandung-raya-tabrakan-ini-maksud-di-balik-lampu-sinyal-kereta-api",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/05/WhatsApp-Image-2024-01-05-at-153651-1-1-139476147.jpeg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/05/WhatsApp-Image-2024-01-05-at-153651-1-1-139476147.jpeg",
+              "published_date": "2024-01-05 17:22:12",
+              "section": {
+                "id": 2166,
+                "name": "Infotech",
+                "alias": "infotech"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3700157,
+              "title": "DPR Tuntut Investigasi Tabrakan KA Turangga-Bandung Raya",
+              "description": "DPR menuntut investigasi kecelakaan KA Turangga-Bandung Raya. Diduga kuat dipicu human error dalam insiden yang memilukan itu.",
+              "url": "https://www.akurat.co/nasional/1303700157/dpr-tuntut-investigasi-tabrakan-ka-turangga-bandung-raya",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/05/antarafoto-kecelakaan-kereta-di-cicalengka-05012024-rai-5-4177553444.jpg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/05/antarafoto-kecelakaan-kereta-di-cicalengka-05012024-rai-5-4177553444.jpg",
+              "published_date": "2024-01-05 15:51:30",
+              "section": {
+                "id": 2137,
+                "name": "Nasional",
+                "alias": "nasional"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3699972,
+              "title": "Fakta-fakta Kecelakaan Kereta Api Turangga Tabrakan dengan Commuter Line Bandung Raya di Cicalengka",
+              "description": "Rangkuman fakta-fakta yang terjadi dari kecelakaan KA Turangga dengan Commuterline Bandung Raya di Cicalengka.",
+              "url": "https://www.akurat.co/viral/1303699972/fakta-fakta-kecelakaan-kereta-api-turangga-tabrakan-dengan-commuter-line-bandung-raya-di-cicalengka",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/05/antarafoto-kecelakaan-kereta-di-cicalengka-05012024-rai-11-767302925.jpg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/05/antarafoto-kecelakaan-kereta-di-cicalengka-05012024-rai-11-767302925.jpg",
+              "published_date": "2024-01-05 15:01:41",
+              "section": {
+                "id": 2151,
+                "name": "Viral",
+                "alias": "viral"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3699152,
+              "title": "Daftar Perjalanan Kereta Api Dialihkan hingga Dibatalkan Sebagai Imbas dari Kecelakaan KA Turangga Tabrakan dengan Commuterline Bandung Raya",
+              "description": "Kecelakaan KA Turangga yang bertabrakan dengan Commuterline Bandung Raya telah membuat sejumlah daftar kereta api dialihkan dan dibatalkan.",
+              "url": "https://www.akurat.co/nasional/1303699152/daftar-perjalanan-kereta-api-dialihkan-hingga-dibatalkan-sebagai-imbas-dari-kecelakaan-ka-turangga-tabrakan-dengan-commuterline-bandung-raya",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/05/Desain-tanpa-judul_20240105_114027_0000-330694233.png",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/05/Desain-tanpa-judul_20240105_114027_0000-330694233.png",
+              "published_date": "2024-01-05 11:48:56",
+              "section": {
+                "id": 2137,
+                "name": "Nasional",
+                "alias": "nasional"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3698993,
+              "title": "Basarnas Bandung Gercep Evakuasi Korban Tabrakan KA Turangga dengan KA Bandung Raya",
+              "description": "Insiden memilukan terjadi di awal tahun 2024, terjadi tabrakan KA Turangga dengan KA Commuter Line Bandung Raya",
+              "url": "https://www.akurat.co/nasional/1303698993/basarnas-bandung-gercep-evakuasi-korban-tabrakan-ka-turangga-dengan-ka-bandung-raya",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/05/antarafoto-kecelakaan-kereta-di-cicalengka-05012024-rai-11-767302925.jpg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/05/antarafoto-kecelakaan-kereta-di-cicalengka-05012024-rai-11-767302925.jpg",
+              "published_date": "2024-01-05 11:15:19",
+              "section": {
+                "id": 2137,
+                "name": "Nasional",
+                "alias": "nasional"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3698907,
+              "title": "Dirjen Perkereta Apian Turunkan Tim Evakuasi KA Turangga dengan KA Bandung Raya",
+              "description": "Kementerian Perhubungan (Kemenhub) RI, melalui Direktorar Jenderal Perkereta Apian, telah mengirimkan tim evakuasi untuk mengevakuasi korban",
+              "url": "https://www.akurat.co/nasional/1303698907/dirjen-perkereta-apian-turunkan-tim-evakuasi-ka-turangga-dengan-ka-bandung-raya",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/05/IMG_2095-3226649624.jpeg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/05/IMG_2095-3226649624.jpeg",
+              "published_date": "2024-01-05 10:58:23",
+              "section": {
+                "id": 2137,
+                "name": "Nasional",
+                "alias": "nasional"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 3698473,
+              "title": "Begini Kronologi Adu Banteng KA Turangga dengan Commuterline Bandung Raya!",
+              "description": "Kecelakaan terjadi antara Kereta Api 350 Commuterline Bandung Raya dengan Pib 65A Turangga pada Jumat (5/1/2024) pukul 06.30 WIB.",
+              "url": "https://www.akurat.co/daerah/1303698473/begini-kronologi-adu-banteng-ka-turangga-dengan-commuterline-bandung-raya",
+              "photo_url": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/photo/p2/130/2024/01/05/antarafoto-kecelakaan-kereta-di-cicalengka-05012024-rai-10-1270238517.jpg",
+              "thumb_url": "https://static.promediateknologi.id/crop/0x0:0x0/220x140/photo/p2/130/2024/01/05/antarafoto-kecelakaan-kereta-di-cicalengka-05012024-rai-10-1270238517.jpg",
+              "published_date": "2024-01-05 09:38:20",
+              "section": {
+                "id": 2141,
+                "name": "Daerah",
+                "alias": "daerah"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://www.akurat.co",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 2355334,
+              "title": "Polisi Tangkap 4 Terduga Teroris di Wilayah Bandung Raya",
+              "description": "Densus 88 Antiteror menangkap seorang terduga teroris di sebuah mal kawasan Jalan Kepataihan, Kota Bandung.",
+              "url": "https://www.akurat.co/daerah/1302355334/Polisi-Tangkap-4-Terduga-Teroris-di-Wilayah-Bandung-Raya",
+              "photo_url": "https://assets.promediateknologi.id/crop/0x0:0x0/750x500/photo/akurat/images/2022/04/big/img_625e328c32f1d7-42176205-33643447.jpg",
+              "thumb_url": "https://assets.promediateknologi.id/crop/0x0:0x0/220x140/photo/akurat/images/2022/04/big/img_625e328c32f1d7-42176205-33643447.jpg",
+              "published_date": "2022-04-19 12:30:30",
+              "section": {
+                "id": 2141,
+                "name": "Daerah",
+                "alias": "daerah"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://akurat.mediapromed.com",
+                "alias": "akurat"
+              }
+            },
+            {
+              "id": 2349498,
+              "title": "Relawan Bandung Raya Mau Dukung Jokowi Tiga Periode, PDIP: Harus Taat Konstitusi",
+              "description": "Konstitusi hanya memberi ruang jabatan presiden dua kali lima tahun",
+              "url": "https://www.akurat.co/politik/1302349498/Relawan-Bandung-Raya-Mau-Dukung-Jokowi-Tiga-Periode-PDIP-Harus-Taat-Konstitusi",
+              "photo_url": "https://assets.promediateknologi.id/crop/0x0:0x0/750x500/photo/akuratco/images/akurat_20181108064333_V1G7Kz.jpg",
+              "thumb_url": "https://assets.promediateknologi.id/crop/0x0:0x0/220x140/photo/akuratco/images/akurat_20181108064333_V1G7Kz.jpg",
+              "published_date": "2022-03-21 00:57:51",
+              "section": {
+                "id": 2138,
+                "name": "Politik",
+                "alias": "politik"
+              },
+              "content_type": "ARTICLE",
+              "is_video_content": 0,
+              "site": {
+                "id": 130,
+                "name": "Akurat",
+                "url": "https://akurat.mediapromed.com",
+                "alias": "akurat"
+              }
+            }
+          ],
+          "page": 1,
+          "total": 20,
+          "total_page": 2
+        }
+      }
+    }
   }
 ]

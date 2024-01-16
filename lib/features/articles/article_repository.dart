@@ -88,4 +88,82 @@ class ArticleRepository {
       },
     );
   }
+
+  static List<String> get badWords => [
+        'corona',
+        'covid',
+        'covid-19',
+        'covid19',
+        'covid 19',
+        'coronavirus',
+        'virus',
+        'pandemi',
+        'pandemic',
+        'pandemy',
+        'pandemik',
+        'pandemis',
+        'pandemial',
+        'pandemial',
+        'pandemicall',
+      ];
+
+  static InfiniteQuery<List<Article>, int> getArticleByTag(String tag) {
+    String lowerTag = tag.toLowerCase();
+
+    return InfiniteQuery<List<Article>, int>(
+      key: ['/article/tag/?tag=$lowerTag'],
+      queryFn: (page) async {
+        List<Article> articles = [];
+
+        if (lowerTag.isEmpty || badWords.contains(lowerTag)) {
+          return articles;
+        }
+
+        final raw = await HttpClient.instance.get(
+          '/article/tag/?tag=$lowerTag&page=$page',
+        );
+
+        final res = ApiResult<ArticleResponseData>.fromJson(
+          raw.data,
+          fromJsonT: ArticleResponseData.fromJson,
+        );
+
+        if ((res.data?.list ?? []).isEmpty) {
+          final query = await HttpClient.instance.get(
+            '/article/search/?q=$lowerTag&page=1',
+          );
+
+          final queryRes = ApiResult<ArticleResponseData>.fromJson(
+            query.data,
+            fromJsonT: ArticleResponseData.fromJson,
+          );
+
+          articles = queryRes.data?.list ?? [];
+        } else {
+          articles = res.data?.list ?? [];
+        }
+
+        return articles;
+      },
+      getNextArg: (state) {
+        if (state.lastPage?.isEmpty ?? false) return null;
+        return state.length + 1;
+      },
+      config: QueryConfig(
+        refetchDuration: const Duration(seconds: 2),
+        serializer: (dynamic postJson) {
+          return (postJson as List<dynamic>)
+              .map(
+                (dynamic page) => (page as List<dynamic>)
+                    .map(
+                      (dynamic post) =>
+                          Article.fromJson(post as Map<String, dynamic>),
+                    )
+                    .toList(),
+              )
+              .toList();
+        },
+      ),
+    );
+  }
 }

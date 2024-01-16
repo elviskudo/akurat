@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../pages/article/tag/page.dart';
 import '../../articles/models/article.dart';
 
 class HeadlineCarouselItemContent extends StatelessWidget {
@@ -43,7 +44,19 @@ class HeadlineCarouselItemContent extends StatelessWidget {
               data: Theme.of(context).copyWith(
                 visualDensity: VisualDensity.compact,
               ),
-              child: Chip(
+              child: ActionChip(
+                onPressed: () {
+                  if (headline.section != null) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => TagPage(
+                          tag: headline.section!.name,
+                        ),
+                      ),
+                    );
+                  }
+                },
                 side: BorderSide.none,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(4.0),
