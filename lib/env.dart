@@ -4,7 +4,7 @@ part 'env.g.dart';
 
 @Envied(path: '.env.local')
 abstract class Env {
-  @EnviedField(varName: 'DATASOURCE', defaultValue: 'mock')
+  @EnviedField(varName: 'DATASOURCE')
   static const String dataSource = _Env.dataSource;
 
   @EnviedField(varName: 'API_URL', obfuscate: true)

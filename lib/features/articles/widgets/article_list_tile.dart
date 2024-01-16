@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:lucide_icons/lucide_icons.dart';
 
 import '../../../pages/article/id/page.dart';
 import '../models/article.dart';
@@ -78,7 +79,22 @@ class ArticleListTile extends StatelessWidget {
             ?.copyWith(color: Colors.black54),
       ),
       trailing: article.pageviews != null
-          ? Text('Views ${article.pageviews}.')
+          ? Row(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                const Icon(LucideIcons.eye, size: 16),
+                const SizedBox(width: 4),
+                Text(
+                  article.pageviews!,
+                  style: Theme.of(context)
+                      .textTheme
+                      .labelSmall
+                      ?.copyWith(color: Colors.black54),
+                ),
+              ],
+            )
           : null,
     );
   }

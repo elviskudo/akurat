@@ -10,7 +10,7 @@
         "run",
         "build_runner",
         "build",
-        "lib/env/", // only scan lib dir
+        "lib/", // only scan lib dir
         "--delete-conflicting-outputs", // do not ask to delete conflicting files
       ],
       "presentation": {

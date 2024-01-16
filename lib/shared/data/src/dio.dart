@@ -12,8 +12,6 @@ class HttpClient {
   static final _instance = Dio(
     BaseOptions(
       baseUrl: Env.apiUrl,
-      connectTimeout: const Duration(milliseconds: 3000),
-      receiveTimeout: const Duration(milliseconds: 5000),
       contentType: 'application/json',
       headers: {
         'Accept': 'application/vnd.promedia+json; version=1.0',
@@ -33,6 +31,7 @@ class HttpClient {
     }
 
     await requestToken(instance, forced: true);
+    instance.interceptors.add(TokenInterceptor());
   }
 }
 
@@ -66,9 +65,11 @@ Future<String?> requestToken(Dio dio, {bool forced = false}) async {
 class TokenInterceptor extends Interceptor {
   @override
   void onRequest(
-      RequestOptions options, RequestInterceptorHandler handler) async {
+    RequestOptions options,
+    RequestInterceptorHandler handler,
+  ) async {
     final token = await requestToken(HttpClient.instance);
-    options.headers['x-access-token'] = token;
+    options.headers['Authorization'] = 'Bearer $token';
 
     return handler.next(options);
   }
@@ -81,7 +82,7 @@ class TokenInterceptor extends Interceptor {
 
     if (unauthorized) {
       final token = await requestToken(HttpClient.instance, forced: true);
-      err.requestOptions.headers['x-access-token'] = token;
+      err.requestOptions.headers['Authorization'] = 'Bearer $token';
     }
 
     return handler.next(err);

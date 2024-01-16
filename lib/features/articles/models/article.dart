@@ -60,7 +60,7 @@ class Article {
         pageviews: json['pageviews'] != null
             ? NumberFormat.compact(
                 locale: 'id_ID',
-              ).parse(json['pageviews']).toString()
+              ).format(json['pageviews']).toString()
             : null,
       );
 
