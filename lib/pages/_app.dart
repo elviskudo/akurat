@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:websafe_svg/websafe_svg.dart';
 
 import '../features/topics/topics_view.dart';
+import '../features/topics/widgets/topics_search_delegate.dart';
 import '../shared/widgets/app_shell.dart';
 import '_app_state.dart';
 import 'tab/home/page.dart';
@@ -28,6 +29,17 @@ class Application extends ConsumerWidget {
         ),
         centerTitle: true,
         bottom: const TopicsTabBar(),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.search),
+            onPressed: () async {
+              await showSearch(
+                context: context,
+                delegate: TopicsSearchDelegate(),
+              );
+            },
+          ),
+        ],
       ),
       child: IndexedStack(
         index: currentTab.index,

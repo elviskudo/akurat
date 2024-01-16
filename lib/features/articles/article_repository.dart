@@ -89,7 +89,7 @@ class ArticleRepository {
     );
   }
 
-  static List<String> get badWords => [
+  static List<String> get _badWords => [
         'corona',
         'covid',
         'covid-19',
@@ -107,7 +107,28 @@ class ArticleRepository {
         'pandemicall',
       ];
 
-  static InfiniteQuery<List<Article>, int> getArticleByTag(String tag) {
+  static Future<List<Article>> _searchArticles(String q, int page) async {
+    String lowerQ = q.toLowerCase();
+
+    if (lowerQ.isEmpty || _badWords.contains(lowerQ)) {
+      return [];
+    }
+
+    final raw = await HttpClient.instance.get(
+      '/article/search/?q=$lowerQ&page=$page',
+    );
+
+    final res = ApiResult<ArticleResponseData>.fromJson(
+      raw.data,
+      fromJsonT: ArticleResponseData.fromJson,
+    );
+
+    final articles = res.data?.list ?? [];
+
+    return articles;
+  }
+
+  static InfiniteQuery<List<Article>, int> getArticlesByTag(String tag) {
     String lowerTag = tag.toLowerCase();
 
     return InfiniteQuery<List<Article>, int>(
@@ -115,7 +136,7 @@ class ArticleRepository {
       queryFn: (page) async {
         List<Article> articles = [];
 
-        if (lowerTag.isEmpty || badWords.contains(lowerTag)) {
+        if (lowerTag.isEmpty || _badWords.contains(lowerTag)) {
           return articles;
         }
 
@@ -129,16 +150,7 @@ class ArticleRepository {
         );
 
         if ((res.data?.list ?? []).isEmpty) {
-          final query = await HttpClient.instance.get(
-            '/article/search/?q=$lowerTag&page=1',
-          );
-
-          final queryRes = ApiResult<ArticleResponseData>.fromJson(
-            query.data,
-            fromJsonT: ArticleResponseData.fromJson,
-          );
-
-          articles = queryRes.data?.list ?? [];
+          articles = await _searchArticles(lowerTag, page);
         } else {
           articles = res.data?.list ?? [];
         }
@@ -151,6 +163,38 @@ class ArticleRepository {
       },
       config: QueryConfig(
         refetchDuration: const Duration(seconds: 2),
+        serializer: (dynamic postJson) {
+          return (postJson as List<dynamic>)
+              .map(
+                (dynamic page) => (page as List<dynamic>)
+                    .map(
+                      (dynamic post) =>
+                          Article.fromJson(post as Map<String, dynamic>),
+                    )
+                    .toList(),
+              )
+              .toList();
+        },
+      ),
+    );
+  }
+
+  static InfiniteQuery<List<Article>, int> getArticlesByKeyword(
+    String keyword,
+  ) {
+    String lowerKeyword = keyword.toLowerCase();
+
+    return InfiniteQuery<List<Article>, int>(
+      key: ['/article/search/?q=$lowerKeyword'],
+      queryFn: (page) async {
+        return _searchArticles(lowerKeyword, page);
+      },
+      getNextArg: (state) {
+        if (state.lastPage?.isEmpty ?? false) return null;
+        return state.length + 1;
+      },
+      config: QueryConfig(
+        ignoreCacheDuration: true,
         serializer: (dynamic postJson) {
           return (postJson as List<dynamic>)
               .map(

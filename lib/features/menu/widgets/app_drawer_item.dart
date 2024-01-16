@@ -28,6 +28,7 @@ class AppDrawerItem extends StatelessWidget {
                   ListTile(
                     title: Text(child.title),
                     onTap: () {
+                      Navigator.of(context).pop();
                       Navigator.of(context).push(
                         MaterialPageRoute(
                           builder: (context) => TagPage(tag: child.name),
@@ -46,6 +47,7 @@ class AppDrawerItem extends StatelessWidget {
       leading: const Icon(LucideIcons.shapes),
       title: Text(menu.title),
       onTap: () {
+        Navigator.of(context).pop();
         Navigator.of(context).push(
           MaterialPageRoute(
             builder: (context) => TagPage(tag: menu.name),

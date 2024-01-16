@@ -2,6 +2,7 @@ import 'package:cached_query_flutter/cached_query_flutter.dart';
 
 import '../../shared/data/dto/api_result.dart';
 import '../../shared/data/src/dio.dart';
+import '../../shared/data/src/fss.dart';
 import '../menu/menu_model.dart';
 
 typedef Topic = Menu;
@@ -34,5 +35,22 @@ class TopicsRepository {
         return topics;
       },
     );
+  }
+
+  static Future<List<String>> recentSearches() async {
+    final res = await SecureStorage.read('recentSearches');
+    if (res == null) return [];
+
+    final List<String> searches = res.split(',');
+
+    return searches;
+  }
+
+  static Future<void> addRecentSearch(String keyword) async {
+    final searches = await recentSearches();
+    searches.remove(keyword);
+    searches.insert(0, keyword);
+    if (searches.length > 10) searches.removeLast();
+    await SecureStorage.write('recentSearches', searches.join(','));
   }
 }
