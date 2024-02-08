@@ -1,22 +1,24 @@
 name: akurat
 description: "Mobile version of web news app www.akurat.co"
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
-  sdk: '>=3.2.3 <4.0.0'
+  sdk: ">=3.2.3 <4.0.0"
 
 dependencies:
   cached_network_image: ^3.3.1
   cached_query_flutter: ^1.0.1
   cached_storage: ^1.0.1
   carousel_slider: ^4.2.1
+  connectivity_plus: ^5.0.2
   dio: ^5.4.0
   dio_mock_interceptor: ^1.0.1
   envied: ^0.5.2
   flutter:
     sdk: flutter
   flutter_html: ^3.0.0-beta.2
+  flutter_launcher_icons: ^0.13.1
   flutter_riverpod: ^2.4.9
   flutter_secure_storage: ^9.0.0
   google_fonts: ^6.1.0
@@ -24,6 +26,15 @@ dependencies:
   lucide_icons: ^0.257.0
   shimmer: ^3.0.0
   websafe_svg: ^3.0.1+1
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path_android: "assets/logo1.png"
+  image_path_ios: "assets/logo1.png"
+  min_sdk_android: 19
+  remove_alpha_ios: true
+  background_color_ios: "#ffffff"
 
 dev_dependencies:
   flutter_test:
