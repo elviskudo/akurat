@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lucide_icons/lucide_icons.dart';
 
-import '../../../pages/tab/topics.dart';
+import '../../../pages/tabs/topics/slug/page.dart';
 import '../topics_repository.dart';
 
 class TopicsSearchDelegate extends SearchDelegate<String> {
@@ -29,7 +29,7 @@ class TopicsSearchDelegate extends SearchDelegate<String> {
 
   @override
   Widget buildResults(BuildContext context) {
-    return TopicsPage(tag: query, type: PageType.search);
+    return TopicsDetailPage(tag: query, type: PageType.search);
   }
 
   @override

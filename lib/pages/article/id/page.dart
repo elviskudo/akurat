@@ -4,7 +4,7 @@ import 'package:flutter_html/flutter_html.dart';
 
 import '../../../features/articles/article_repository.dart';
 import '../../../features/articles/widgets/article_list_tile.dart';
-import '../../tab/home/widgets/home_tab_section.dart';
+import '../../tabs/home/widgets/home_tab_section.dart';
 import '../tag/page.dart';
 import 'widget/article_detail_app_bar.dart';
 

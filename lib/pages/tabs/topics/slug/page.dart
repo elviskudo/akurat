@@ -3,24 +3,28 @@ import 'dart:io';
 import 'package:cached_query_flutter/cached_query_flutter.dart';
 import 'package:flutter/material.dart';
 
-import '../../features/articles/article_repository.dart';
-import '../../features/articles/models/article.dart';
-import '../../features/articles/widgets/article_list_tile.dart';
-import '../../features/articles/widgets/article_list_tile_loading.dart';
+import '../../../../features/articles/article_repository.dart';
+import '../../../../features/articles/models/article.dart';
+import '../../../../features/articles/widgets/article_list_tile.dart';
+import '../../../../features/articles/widgets/article_list_tile_loading.dart';
 
 enum PageType { search, tag }
 
-class TopicsPage extends StatefulWidget {
-  const TopicsPage({super.key, required this.tag, this.type = PageType.tag});
+class TopicsDetailPage extends StatefulWidget {
+  const TopicsDetailPage({
+    super.key,
+    required this.tag,
+    this.type = PageType.tag,
+  });
 
   final String tag;
   final PageType type;
 
   @override
-  State<TopicsPage> createState() => _TopicsPageState();
+  State<TopicsDetailPage> createState() => _TopicsDetailPageState();
 }
 
-class _TopicsPageState extends State<TopicsPage> {
+class _TopicsDetailPageState extends State<TopicsDetailPage> {
   final _scrollController = ScrollController();
 
   @override

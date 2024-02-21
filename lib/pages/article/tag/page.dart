@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../tab/topics.dart';
+import '../../tabs/topics/slug/page.dart';
 
 class TagPage extends StatelessWidget {
   const TagPage({super.key, required this.tag});
@@ -13,7 +13,7 @@ class TagPage extends StatelessWidget {
       appBar: AppBar(
         title: Text(tag[0].toUpperCase() + tag.substring(1)),
       ),
-      body: TopicsPage(tag: tag),
+      body: TopicsDetailPage(tag: tag),
     );
   }
 }

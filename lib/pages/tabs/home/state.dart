@@ -7,31 +7,31 @@ enum AppTab {
 }
 
 @immutable
-class AppState {
+class HomeState {
   final int topicsTabIndex;
   final AppTab currentTab;
   final String? tag;
 
-  const AppState({
+  const HomeState({
     required this.topicsTabIndex,
     required this.currentTab,
     this.tag,
   });
 
-  AppState copyWith({
+  HomeState copyWith({
     int? topicsTabIndex,
     AppTab? currentTab,
     String? tag,
   }) {
-    return AppState(
+    return HomeState(
       topicsTabIndex: topicsTabIndex ?? this.topicsTabIndex,
       currentTab: currentTab ?? this.currentTab,
       tag: tag ?? this.tag,
     );
   }
 
-  factory AppState.reset() {
-    return const AppState(
+  factory HomeState.reset() {
+    return const HomeState(
       topicsTabIndex: 0,
       currentTab: AppTab.home,
       tag: null,
@@ -39,10 +39,10 @@ class AppState {
   }
 }
 
-class AppNotifier extends Notifier<AppState> {
+class HomeStateNotifier extends Notifier<HomeState> {
   @override
-  AppState build() {
-    return AppState.reset();
+  HomeState build() {
+    return HomeState.reset();
   }
 
   void setCurrentTopicsTabIndex(int index, {String? tag}) {
@@ -63,6 +63,7 @@ class AppNotifier extends Notifier<AppState> {
   }
 }
 
-final appNotifierProvider = NotifierProvider<AppNotifier, AppState>(
-  () => AppNotifier(),
+final homeStateNotifierProvider =
+    NotifierProvider<HomeStateNotifier, HomeState>(
+  () => HomeStateNotifier(),
 );

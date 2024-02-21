@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:lucide_icons/lucide_icons.dart';
 
-import '../../pages/_app_state.dart';
+import '../../pages/tabs/home/state.dart';
 import 'topics_repository.dart';
 import 'widgets/topics_chip_loading.dart';
 
@@ -15,14 +15,14 @@ class TopicsTabBar extends ConsumerWidget implements PreferredSizeWidget {
 
   void _onTap(WidgetRef ref, {required int index, String? tag}) {
     ref
-        .read(appNotifierProvider.notifier)
+        .read(homeStateNotifierProvider.notifier)
         .setCurrentTopicsTabIndex(index, tag: tag);
   }
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     int currentTabIndex = ref.watch(
-      appNotifierProvider.select((state) => state.topicsTabIndex),
+      homeStateNotifierProvider.select((state) => state.topicsTabIndex),
     );
 
     return QueryBuilder(
