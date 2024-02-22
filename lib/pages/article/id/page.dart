@@ -8,7 +8,7 @@ import '../../tabs/home/widgets/home_tab_section.dart';
 import '../tag/page.dart';
 import 'widget/article_detail_app_bar.dart';
 
-class ArticleDetailPage extends StatefulWidget {
+class ArticleDetailPage extends StatelessWidget {
   const ArticleDetailPage({
     super.key,
     required this.id,
@@ -17,52 +17,18 @@ class ArticleDetailPage extends StatefulWidget {
   final int id;
 
   @override
-  State<ArticleDetailPage> createState() => _ArticleDetailPageState();
-}
-
-class _ArticleDetailPageState extends State<ArticleDetailPage> {
-  final ScrollController _scrollController = ScrollController();
-
-  bool shouldShowTitle = false;
-
-  void _scrollListener() {
-    if (_scrollController.offset >= 240) {
-      setState(() {
-        shouldShowTitle = true;
-      });
-    } else {
-      setState(() {
-        shouldShowTitle = false;
-      });
-    }
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    _scrollController.addListener(_scrollListener);
-  }
-
-  @override
-  void dispose() {
-    _scrollController.removeListener(_scrollListener);
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return QueryBuilder(
-      query: ArticleRepository.getDetail(widget.id),
+      query: ArticleRepository.getDetail(id),
       builder: (context, state) {
         return Scaffold(
           body: state.status == QueryStatus.loading || state.data == null
               ? const Center(child: CircularProgressIndicator())
               : NestedScrollView(
-                  controller: _scrollController,
                   headerSliverBuilder: (context, innerBoxIsScrolled) {
                     return [
                       ArticleDetailAppBar(
-                        shouldShowTitle: shouldShowTitle,
+                        shouldShowTitle: innerBoxIsScrolled,
                         articleDetail: state.data!,
                       ),
                     ];

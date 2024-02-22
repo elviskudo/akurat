@@ -3,6 +3,7 @@ import 'package:cached_query_flutter/cached_query_flutter.dart';
 import '../../env.dart';
 import '../../shared/data/dto/api_result.dart';
 import '../../shared/data/src/dio.dart';
+import '../../shared/data/src/hive.dart';
 import 'models/article.dart';
 import 'models/article_detail.dart';
 
@@ -209,5 +210,21 @@ class ArticleRepository {
         },
       ),
     );
+  }
+
+  static List<Article> getSavedArticles() {
+    return HiveStore.getAllEntities<Article>();
+  }
+
+  static Article? getSavedArticle(String key) {
+    return HiveStore.getEntity<Article>(key);
+  }
+
+  static Future<void> saveArticle(Article article) async {
+    await HiveStore.saveEntity(article);
+  }
+
+  static Future<void> removeArticle(Article article) async {
+    await HiveStore.deleteEntity(article.key);
   }
 }

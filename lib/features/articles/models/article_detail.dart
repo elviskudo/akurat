@@ -65,10 +65,7 @@ class ArticleDetail {
       photoUrl: json['photo_url'],
       publishedDate: formatDate(json['published_date']),
       related: List<Article>.from(
-        json['related'].map((x) {
-          x['section'] = {'id': 1, 'alias': x['section'], 'name': x['section']};
-          return Article.fromJson(x);
-        }),
+        json['related'].map((x) => Article.fromJson(x)),
       ),
       section: json['section'] != null
           ? ArticleSection.fromJson(json['section'])
@@ -97,6 +94,22 @@ class ArticleDetail {
         'title': title,
         'url': url,
       };
+
+  Article toArticle() {
+    return Article(
+      'article-$id',
+      title: title,
+      description: description,
+      id: id,
+      isVideoContent: false,
+      photoUrl: photoUrl,
+      publishedDate: publishedDate,
+      thumbUrl: thumbUrl,
+      url: url,
+      section: section,
+      site: site,
+    );
+  }
 }
 
 class ArticleAuthor {

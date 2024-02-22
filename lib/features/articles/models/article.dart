@@ -2,7 +2,9 @@ import 'dart:convert';
 
 import 'package:intl/intl.dart';
 
-class Article {
+import '../../../shared/data/src/hive.dart';
+
+class Article extends LocalEntity {
   final String description;
   final int id;
   final bool isVideoContent;
@@ -18,7 +20,8 @@ class Article {
   ArticleSite? site;
   String? pageviews;
 
-  Article({
+  Article(
+    super.key, {
     required this.description,
     required this.id,
     required this.isVideoContent,
@@ -51,6 +54,7 @@ class Article {
     }
 
     return Article(
+      'article-${json['id'].toString()}',
       contentType: json['content_type'] ?? '',
       description: json['description'] ?? '',
       id: json['id'],
@@ -76,6 +80,7 @@ class Article {
     );
   }
 
+  @override
   Map<String, dynamic> toJson() => {
         'content_type': contentType,
         'description': description,
