@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'tabs/bookmark/page.dart';
-import 'tabs/notifications/page.dart';
+// import 'tabs/notifications/page.dart';
 import 'widgets/account_app_bar.dart';
 
 class AccountPage extends StatelessWidget {
@@ -12,7 +12,8 @@ class AccountPage extends StatelessWidget {
     return SizedBox(
       height: MediaQuery.of(context).size.height,
       child: DefaultTabController(
-        length: 2,
+        // length: 2,
+        length: 1,
         child: NestedScrollView(
           headerSliverBuilder: (context, _) {
             return [const AccountAppBar()];
@@ -20,7 +21,7 @@ class AccountPage extends StatelessWidget {
           body: const TabBarView(
             children: [
               BookmarkPage(),
-              NotificationsPage(),
+              // NotificationsPage(),
             ],
           ),
         ),

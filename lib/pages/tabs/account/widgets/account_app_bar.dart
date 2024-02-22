@@ -74,10 +74,10 @@ class AccountAppBar extends StatelessWidget {
       bottom: const TabBar(
         tabs: [
           Tab(icon: Icon(Icons.bookmark_outline), text: 'Bookmark'),
-          Tab(
-            icon: Icon(Icons.notifications_outlined),
-            text: 'Notifikasi',
-          ),
+          // Tab(
+          //   icon: Icon(Icons.notifications_outlined),
+          //   text: 'Notifikasi',
+          // ),
         ],
       ),
     );
