@@ -1,9 +1,11 @@
 import 'package:cached_query_flutter/cached_query_flutter.dart';
 import 'package:flutter/material.dart';
-import 'package:lucide_icons/lucide_icons.dart';
 
+// import 'package:lucide_icons/lucide_icons.dart';
+
+import '../../../features/menu/menu_view.dart';
 import '../../../features/topics/topics_repository.dart';
-import '../../article/tag/page.dart';
+// import '../../article/tag/page.dart';
 
 class TopicsPage extends StatelessWidget {
   const TopicsPage({super.key});
@@ -25,7 +27,7 @@ class TopicsPage extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(
                   vertical: 8.0,
                   horizontal: 16.0,
-                ),
+                ).copyWith(bottom: 24),
                 sliver: SliverToBoxAdapter(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -48,71 +50,72 @@ class TopicsPage extends StatelessWidget {
                   ),
                 ),
               ),
-              SliverPadding(
-                padding: const EdgeInsets.all(16.0).copyWith(top: 8),
-                sliver: SliverGrid.builder(
-                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
-                    crossAxisSpacing: 16.0,
-                    mainAxisSpacing: 16.0,
-                  ),
-                  itemCount: state.data?.length ?? 10,
-                  itemBuilder: (BuildContext context, int index) {
-                    return Card(
-                      clipBehavior: Clip.antiAlias,
-                      elevation: 1,
-                      borderOnForeground: true,
-                      child: GestureDetector(
-                        onTap: () {
-                          Navigator.of(context).push(
-                            MaterialPageRoute(
-                              builder: (context) => TagPage(
-                                tag: state.data![index].name,
-                              ),
-                            ),
-                          );
-                        },
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Container(
-                              padding: const EdgeInsets.all(16.0),
-                              height: 108,
-                              decoration: BoxDecoration(
-                                color: Colors.grey[100],
-                              ),
-                              child: Center(
-                                child: Icon(
-                                  LucideIcons.shapes,
-                                  size: 32,
-                                  color: Colors.grey[600],
-                                ),
-                              ),
-                            ),
-                            Divider(
-                              height: 1,
-                              color: Colors.grey[300],
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.all(16.0),
-                              child: Text(
-                                state.data![index].title,
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .bodyMedium
-                                    ?.copyWith(fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    );
-                  },
-                ),
-              ),
+              const SliverToBoxAdapter(child: MenuView())
+              // SliverPadding(
+              //   padding: const EdgeInsets.all(16.0).copyWith(top: 8),
+              //   sliver: SliverGrid.builder(
+              //     gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              //       crossAxisCount: 2,
+              //       crossAxisSpacing: 16.0,
+              //       mainAxisSpacing: 16.0,
+              //     ),
+              //     itemCount: state.data?.length ?? 10,
+              //     itemBuilder: (BuildContext context, int index) {
+              //       return Card(
+              //         clipBehavior: Clip.antiAlias,
+              //         elevation: 1,
+              //         borderOnForeground: true,
+              //         child: GestureDetector(
+              //           onTap: () {
+              //             Navigator.of(context).push(
+              //               MaterialPageRoute(
+              //                 builder: (context) => TagPage(
+              //                   tag: state.data![index].name,
+              //                 ),
+              //               ),
+              //             );
+              //           },
+              //           child: Column(
+              //             crossAxisAlignment: CrossAxisAlignment.start,
+              //             mainAxisSize: MainAxisSize.min,
+              //             children: [
+              //               Container(
+              //                 padding: const EdgeInsets.all(16.0),
+              //                 height: 108,
+              //                 decoration: BoxDecoration(
+              //                   color: Colors.grey[100],
+              //                 ),
+              //                 child: Center(
+              //                   child: Icon(
+              //                     LucideIcons.shapes,
+              //                     size: 32,
+              //                     color: Colors.grey[600],
+              //                   ),
+              //                 ),
+              //               ),
+              //               Divider(
+              //                 height: 1,
+              //                 color: Colors.grey[300],
+              //               ),
+              //               Padding(
+              //                 padding: const EdgeInsets.all(16.0),
+              //                 child: Text(
+              //                   state.data![index].title,
+              //                   maxLines: 1,
+              //                   overflow: TextOverflow.ellipsis,
+              //                   style: Theme.of(context)
+              //                       .textTheme
+              //                       .bodyMedium
+              //                       ?.copyWith(fontWeight: FontWeight.bold),
+              //                 ),
+              //               ),
+              //             ],
+              //           ),
+              //         ),
+              //       );
+              //     },
+              //   ),
+              // ),
             ],
           ),
         );

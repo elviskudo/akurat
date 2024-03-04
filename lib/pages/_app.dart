@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:lucide_icons/lucide_icons.dart';
 import 'package:websafe_svg/websafe_svg.dart';
 
-import '../features/menu/menu_view.dart';
+// import '../features/menu/menu_view.dart';
 import '../features/topics/topics_view.dart';
-import '../features/topics/widgets/topics_search_delegate.dart';
+// import '../features/topics/widgets/topics_search_delegate.dart';
 import 'tabs/account/page.dart';
 import 'tabs/page.dart';
 import 'tabs/search/page.dart';
@@ -47,19 +47,19 @@ class _ApplicationState extends State<Application> {
         ),
         centerTitle: true,
         bottom: _currentIndex == 0 ? const TopicsTabBar() : null,
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.search),
-            onPressed: () async {
-              await showSearch(
-                context: context,
-                delegate: TopicsSearchDelegate(),
-              );
-            },
-          ),
-        ],
+        // actions: [
+        //   IconButton(
+        //     icon: const Icon(Icons.search),
+        //     onPressed: () async {
+        //       await showSearch(
+        //         context: context,
+        //         delegate: TopicsSearchDelegate(),
+        //       );
+        //     },
+        //   ),
+        // ],
       ),
-      drawer: const AppDrawer(),
+      // drawer: const AppDrawer(),
       resizeToAvoidBottomInset: true,
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
@@ -112,11 +112,11 @@ class _ApplicationState extends State<Application> {
               _currentIndex = index;
             });
           },
-          children: const [
-            IndexPage(),
-            TopicsPage(),
-            SearchPage(),
-            AccountPage(),
+          children: [
+            const IndexPage(),
+            const TopicsPage(),
+            SearchPage(pageController: _pageController),
+            const AccountPage(),
           ],
         ),
       ),

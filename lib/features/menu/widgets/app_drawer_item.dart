@@ -18,6 +18,7 @@ class AppDrawerItem extends StatelessWidget {
       return ExpansionTile(
         leading: const Icon(LucideIcons.shapes),
         title: Text(menu.title),
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         children: [
           for (final child in menu.child!)
             Padding(
@@ -27,6 +28,7 @@ class AppDrawerItem extends StatelessWidget {
                 children: [
                   ListTile(
                     title: Text(child.title),
+                    tileColor: Theme.of(context).scaffoldBackgroundColor,
                     onTap: () {
                       Navigator.of(context).pop();
                       Navigator.of(context).push(
@@ -46,6 +48,7 @@ class AppDrawerItem extends StatelessWidget {
     return ListTile(
       leading: const Icon(LucideIcons.shapes),
       title: Text(menu.title),
+      tileColor: Theme.of(context).scaffoldBackgroundColor,
       onTap: () {
         Navigator.of(context).pop();
         Navigator.of(context).push(
