@@ -32,8 +32,8 @@ dependencies:
 flutter_icons:
   android: true
   ios: true
-  image_path_android: "assets/logo1.png"
-  image_path_ios: "assets/logo1.png"
+  image_path_android: "assets/akurat.png"
+  image_path_ios: "assets/akurat.png"
   min_sdk_android: 19
   remove_alpha_ios: true
   background_color_ios: "#ffffff"
@@ -54,3 +54,4 @@ flutter:
     - google_fonts/
     - assets/logo.svg
     - assets/akurat-icon.svg
+    - assets/AppIcons/
