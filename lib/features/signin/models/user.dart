@@ -28,19 +28,6 @@ class User extends LocalEntity {
     required this.profilePhotoUrl,
   });
 
-  factory User.mock() {
-    return User(
-      '1',
-      id: 1,
-      name: 'John Doe',
-      email: 'johndoe@email.com',
-      profilePhotoUrl: 'https://avatars.githubusercontent.com/u/14052859?v=4',
-      createdAt: DateTime.now(),
-      updatedAt: DateTime.now(),
-      currentTeamId: '1',
-    );
-  }
-
   factory User.fromRawJson(String str) => User.fromJson(json.decode(str));
 
   String toRawJson() => json.encode(toJson());

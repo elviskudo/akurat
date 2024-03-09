@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:lucide_icons/lucide_icons.dart';
 
+import '../../../pages/state.dart';
 import '../../../pages/tabs/topics/slug/page.dart';
 import '../topics_repository.dart';
 
 class TopicsSearchDelegate extends SearchDelegate<String> {
+  TopicsSearchDelegate({required this.ref});
+
+  final WidgetRef ref;
+
   @override
   List<Widget>? buildActions(BuildContext context) {
     return [
@@ -23,6 +29,7 @@ class TopicsSearchDelegate extends SearchDelegate<String> {
       icon: const Icon(Icons.arrow_back),
       onPressed: () {
         close(context, '');
+        ref.read(pagesProvider.notifier).changePage(0);
       },
     );
   }

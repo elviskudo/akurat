@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../features/signin/models/user.dart';
@@ -14,9 +15,31 @@ class AccountNotifier extends Notifier<User?> {
     state = user;
   }
 
-  void login(dynamic content) {
-    print(content);
-    state = User.mock();
+  void login(
+    BuildContext context, {
+    required String email,
+    required String password,
+  }) async {
+    await UserRepository.login(email: email, password: password).then((user) {
+      if (user == null) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(
+              'Proses autentikasi gagal. Pastikan data yang Anda masukkan sudah benar.',
+              style: Theme.of(context)
+                  .textTheme
+                  .bodySmall
+                  ?.copyWith(color: Theme.of(context).colorScheme.onError),
+            ),
+            backgroundColor: Theme.of(context).colorScheme.errorContainer,
+          ),
+        );
+      }
+
+      state = user;
+
+      Navigator.of(context).pop();
+    });
   }
 
   void logout() async {

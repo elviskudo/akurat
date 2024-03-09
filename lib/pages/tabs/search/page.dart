@@ -1,33 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../features/topics/widgets/topics_search_delegate.dart';
-
-class SearchPage extends StatefulWidget {
-  const SearchPage({
-    super.key,
-    required this.pageController,
-  });
-
-  final PageController pageController;
-
-  @override
-  State<SearchPage> createState() => _SearchPageState();
-}
-
-class _SearchPageState extends State<SearchPage> {
-  @override
-  void initState() {
-    super.initState();
-
-    Future.delayed(const Duration(milliseconds: 300)).then((_) {
-      showSearch(
-        context: context,
-        delegate: TopicsSearchDelegate(),
-      ).then((_) {
-        widget.pageController.jumpToPage(0);
-      });
-    });
-  }
+class SearchPage extends StatelessWidget {
+  const SearchPage({super.key});
 
   @override
   Widget build(BuildContext context) {

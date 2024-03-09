@@ -4,15 +4,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shimmer/shimmer.dart';
 
 import '../../../signin/page.dart';
+import '../../../state.dart';
 import '../state.dart';
 
 class AccountAppBar extends ConsumerWidget {
-  const AccountAppBar({
-    super.key,
-    required this.pageController,
-  });
-
-  final PageController pageController;
+  const AccountAppBar({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -34,8 +30,9 @@ class AccountAppBar extends ConsumerWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(32),
                 child: CachedNetworkImage(
-                  imageUrl: user?.profilePhotoUrl ??
-                      'https://avatars.githubusercontent.com/u/14052859?v=4',
+                  imageUrl: user != null
+                      ? '${user.profilePhotoUrl}&size=${56}'
+                      : 'https://avatars.githubusercontent.com/u/14052859?v=4',
                   placeholder: (context, url) => Shimmer.fromColors(
                     baseColor: Colors.grey[200]!,
                     highlightColor: Colors.grey[100]!,
@@ -93,7 +90,7 @@ class AccountAppBar extends ConsumerWidget {
                   );
                 } else {
                   ref.read(accountProvider.notifier).logout();
-                  pageController.jumpToPage(0);
+                  ref.read(pagesProvider.notifier).changePage(0);
                 }
               },
               child: Text(user != null ? 'Logout' : 'Login'),

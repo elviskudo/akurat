@@ -1,44 +1,64 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:lucide_icons/lucide_icons.dart';
 import 'package:websafe_svg/websafe_svg.dart';
 
 // import '../features/menu/menu_view.dart';
 import '../features/topics/topics_view.dart';
 // import '../features/topics/widgets/topics_search_delegate.dart';
+import '../features/topics/widgets/topics_search_delegate.dart';
+import 'state.dart';
 import 'tabs/account/page.dart';
 import 'tabs/page.dart';
 import 'tabs/search/page.dart';
 import 'tabs/topics/page.dart';
 
-class Application extends StatefulWidget {
+class Application extends ConsumerStatefulWidget {
   const Application({super.key});
 
   @override
-  State<Application> createState() => _ApplicationState();
+  ConsumerState<Application> createState() => _ApplicationState();
 }
 
-class _ApplicationState extends State<Application> {
-  late int _currentIndex;
+class _ApplicationState extends ConsumerState<Application> {
   late PageController _pageController;
 
   @override
   void initState() {
     super.initState();
-    _currentIndex = 0;
-    _pageController = PageController(
-      initialPage: _currentIndex,
-      keepPage: false,
-    );
+    _pageController = PageController(initialPage: 0, keepPage: false);
   }
 
   @override
   void dispose() {
+    ref.read(pagesProvider.notifier).dispose();
     _pageController.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
+    final currentIndex = ref.watch(pagesProvider);
+
+    ref.listen(pagesProvider, (prev, next) {
+      if (next != prev) {
+        if (next == 2) {
+          Future.delayed(const Duration(milliseconds: 300)).then((_) {
+            showSearch(
+              context: context,
+              delegate: TopicsSearchDelegate(ref: ref),
+            ).then((_) {
+              ref.read(pagesProvider.notifier).changePage(0);
+            });
+          });
+        }
+
+        if (prev == 3 && next == 0) {
+          _pageController.jumpToPage(next);
+        }
+      }
+    });
+
     return Scaffold(
       appBar: AppBar(
         title: WebsafeSvg.asset(
@@ -46,7 +66,7 @@ class _ApplicationState extends State<Application> {
           height: 32.0,
         ),
         centerTitle: true,
-        bottom: _currentIndex == 0 ? const TopicsTabBar() : null,
+        bottom: currentIndex == 0 ? const TopicsTabBar() : null,
         // actions: [
         //   IconButton(
         //     icon: const Icon(Icons.search),
@@ -62,7 +82,7 @@ class _ApplicationState extends State<Application> {
       // drawer: const AppDrawer(),
       resizeToAvoidBottomInset: true,
       bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _currentIndex,
+        currentIndex: currentIndex,
         iconSize: 24.0,
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         unselectedItemColor: Theme.of(context).unselectedWidgetColor,
@@ -108,15 +128,13 @@ class _ApplicationState extends State<Application> {
         child: PageView(
           controller: _pageController,
           onPageChanged: (index) {
-            setState(() {
-              _currentIndex = index;
-            });
+            ref.read(pagesProvider.notifier).changePage(index);
           },
-          children: [
-            const IndexPage(),
-            const TopicsPage(),
-            SearchPage(pageController: _pageController),
-            AccountPage(pageController: _pageController),
+          children: const [
+            IndexPage(),
+            TopicsPage(),
+            SearchPage(),
+            AccountPage(),
           ],
         ),
       ),
