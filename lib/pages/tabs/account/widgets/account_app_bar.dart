@@ -1,14 +1,23 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shimmer/shimmer.dart';
 
-class AccountAppBar extends StatelessWidget {
+import '../../../signin/page.dart';
+import '../state.dart';
+
+class AccountAppBar extends ConsumerWidget {
   const AccountAppBar({
     super.key,
+    required this.pageController,
   });
 
+  final PageController pageController;
+
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final user = ref.watch(accountProvider.select((state) => state));
+
     return SliverAppBar(
       expandedHeight: 280,
       pinned: true,
@@ -25,7 +34,7 @@ class AccountAppBar extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(32),
                 child: CachedNetworkImage(
-                  imageUrl:
+                  imageUrl: user?.profilePhotoUrl ??
                       'https://avatars.githubusercontent.com/u/14052859?v=4',
                   placeholder: (context, url) => Shimmer.fromColors(
                     baseColor: Colors.grey[200]!,
@@ -41,17 +50,29 @@ class AccountAppBar extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 24),
+            if (user?.name != null) ...[
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 32)
+                    .copyWith(bottom: 8),
+                child: Text(
+                  user!.name,
+                  style: Theme.of(context).textTheme.bodyLarge,
+                  textAlign: TextAlign.center,
+                ),
+              )
+            ],
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 32),
+              padding: const EdgeInsets.symmetric(horizontal: 32)
+                  .copyWith(bottom: 24),
               child: Text(
-                'Silahkan login terlebih dahulu untuk menggunakan fitur ini.',
-                style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                      color: Theme.of(context).unselectedWidgetColor,
-                    ),
+                user?.email ?? 'Silahkan login untuk menggunakan fitur ini.',
+                style: Theme.of(context)
+                    .textTheme
+                    .bodySmall
+                    ?.copyWith(color: Theme.of(context).unselectedWidgetColor),
                 textAlign: TextAlign.center,
               ),
             ),
-            const SizedBox(height: 8),
             OutlinedButton(
               style: OutlinedButton.styleFrom(
                 visualDensity: VisualDensity.compact,
@@ -63,8 +84,19 @@ class AccountAppBar extends StatelessWidget {
                 ),
                 foregroundColor: Theme.of(context).unselectedWidgetColor,
               ),
-              onPressed: () {},
-              child: const Text('Login'),
+              onPressed: () {
+                if (user == null) {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => const SigninPage(),
+                    ),
+                  );
+                } else {
+                  ref.read(accountProvider.notifier).logout();
+                  pageController.jumpToPage(0);
+                }
+              },
+              child: Text(user != null ? 'Logout' : 'Login'),
             ),
           ],
         ),

@@ -5,7 +5,12 @@ import 'tabs/bookmark/page.dart';
 import 'widgets/account_app_bar.dart';
 
 class AccountPage extends StatelessWidget {
-  const AccountPage({super.key});
+  const AccountPage({
+    super.key,
+    required this.pageController,
+  });
+
+  final PageController pageController;
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +21,7 @@ class AccountPage extends StatelessWidget {
         length: 1,
         child: NestedScrollView(
           headerSliverBuilder: (context, _) {
-            return [const AccountAppBar()];
+            return [AccountAppBar(pageController: pageController)];
           },
           body: const TabBarView(
             children: [

@@ -16,7 +16,7 @@ void main() async {
 
   await HttpClient.init();
   await Hive.initFlutter();
-  await Hive.openBox<String>(HiveStore.savedArticlesBox);
+  await Hive.openBox<String>(HiveStore.box);
 
   CachedQuery.instance.configFlutter(
     storage: await CachedStorage.ensureInitialized(),

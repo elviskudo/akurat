@@ -116,7 +116,7 @@ class _ApplicationState extends State<Application> {
             const IndexPage(),
             const TopicsPage(),
             SearchPage(pageController: _pageController),
-            const AccountPage(),
+            AccountPage(pageController: _pageController),
           ],
         ),
       ),
