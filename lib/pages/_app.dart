@@ -5,8 +5,6 @@ import 'package:websafe_svg/websafe_svg.dart';
 
 // import '../features/menu/menu_view.dart';
 import '../features/topics/topics_view.dart';
-// import '../features/topics/widgets/topics_search_delegate.dart';
-import '../features/topics/widgets/topics_search_delegate.dart';
 import 'state.dart';
 import 'tabs/account/page.dart';
 import 'tabs/page.dart';
@@ -26,12 +24,11 @@ class _ApplicationState extends ConsumerState<Application> {
   @override
   void initState() {
     super.initState();
-    _pageController = PageController(initialPage: 0, keepPage: false);
+    _pageController = PageController();
   }
 
   @override
   void dispose() {
-    ref.read(pagesProvider.notifier).dispose();
     _pageController.dispose();
     super.dispose();
   }
@@ -40,31 +37,9 @@ class _ApplicationState extends ConsumerState<Application> {
   Widget build(BuildContext context) {
     final currentIndex = ref.watch(pagesProvider);
 
-    ref.listen(pagesProvider, (prev, next) {
-      if (next != prev) {
-        if (next == 2) {
-          Future.delayed(const Duration(milliseconds: 300)).then((_) {
-            showSearch(
-              context: context,
-              delegate: TopicsSearchDelegate(ref: ref),
-            ).then((_) {
-              ref.read(pagesProvider.notifier).changePage(0);
-            });
-          });
-        }
-
-        if (prev == 3 && next == 0) {
-          _pageController.jumpToPage(next);
-        }
-      }
-    });
-
     return Scaffold(
       appBar: AppBar(
-        title: WebsafeSvg.asset(
-          'assets/logo.svg',
-          height: 32.0,
-        ),
+        title: WebsafeSvg.asset('assets/logo.svg', height: 32.0),
         centerTitle: true,
         bottom: currentIndex == 0 ? const TopicsTabBar() : null,
         // actions: [
@@ -130,11 +105,11 @@ class _ApplicationState extends ConsumerState<Application> {
           onPageChanged: (index) {
             ref.read(pagesProvider.notifier).changePage(index);
           },
-          children: const [
-            IndexPage(),
-            TopicsPage(),
-            SearchPage(),
-            AccountPage(),
+          children: [
+            const IndexPage(),
+            const TopicsPage(),
+            SearchPage(pageController: _pageController),
+            const AccountPage(),
           ],
         ),
       ),

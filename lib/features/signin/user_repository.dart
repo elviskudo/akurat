@@ -19,7 +19,7 @@ class UserRepository {
 
     final client = Dio(
       BaseOptions(
-        baseUrl: 'http://sso.imerzone.com',
+        baseUrl: 'https://sso.imerzone.com',
         contentType: 'application/x-www-form-urlencoded',
       ),
     )..httpClientAdapter = DefaultHttpClientAdapter(

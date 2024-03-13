@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:websafe_svg/websafe_svg.dart';
 
-// import '../state.dart';
 import '../tabs/account/state.dart';
 
 class SigninPage extends ConsumerStatefulWidget {
@@ -104,7 +103,6 @@ class _SigninPageState extends ConsumerState<SigninPage> {
                             );
                           },
                         ).then((_) {
-                          // ref.read(pagesProvider.notifier).changePage(0);
                           Navigator.of(context).pop();
                         });
                       },
