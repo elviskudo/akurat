@@ -5,6 +5,7 @@ import 'package:websafe_svg/websafe_svg.dart';
 
 // import '../features/menu/menu_view.dart';
 import '../features/topics/topics_view.dart';
+import '../features/topics/widgets/topics_search_delegate.dart';
 import 'state.dart';
 import 'tabs/account/page.dart';
 import 'tabs/page.dart';
@@ -42,17 +43,17 @@ class _ApplicationState extends ConsumerState<Application> {
         title: WebsafeSvg.asset('assets/logo.svg', height: 32.0),
         centerTitle: true,
         bottom: currentIndex == 0 ? const TopicsTabBar() : null,
-        // actions: [
-        //   IconButton(
-        //     icon: const Icon(Icons.search),
-        //     onPressed: () async {
-        //       await showSearch(
-        //         context: context,
-        //         delegate: TopicsSearchDelegate(),
-        //       );
-        //     },
-        //   ),
-        // ],
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.search),
+            onPressed: () async {
+              await showSearch(
+                context: context,
+                delegate: TopicsSearchDelegate(pageController: _pageController),
+              );
+            },
+          ),
+        ],
       ),
       // drawer: const AppDrawer(),
       resizeToAvoidBottomInset: true,
