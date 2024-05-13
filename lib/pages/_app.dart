@@ -86,11 +86,11 @@ class _ApplicationState extends ConsumerState<Application> {
             label: 'Topik',
             tooltip: 'Topik',
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.search),
-            label: 'Pencarian',
-            tooltip: 'Pencarian',
-          ),
+          // BottomNavigationBarItem(
+          //   icon: Icon(Icons.search),
+          //   label: 'Pencarian',
+          //   tooltip: 'Pencarian',
+          // ),
           BottomNavigationBarItem(
             icon: Icon(LucideIcons.user2),
             label: 'Akun',
