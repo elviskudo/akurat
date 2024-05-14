@@ -109,7 +109,7 @@ class _ApplicationState extends ConsumerState<Application> {
           children: [
             const IndexPage(),
             const TopicsPage(),
-            SearchPage(pageController: _pageController),
+            // SearchPage(pageController: _pageController),
             const AccountPage(),
           ],
         ),
